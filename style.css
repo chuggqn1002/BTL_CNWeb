@@ -6,15 +6,32 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
+header{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    z-index: 1;
+}
+.navbar-nav {
+    justify-content: space-between;
+}
+.nav-bar-right{
+    gap: 10px;
+}
 nav{
     height: 4.5rem;
 }
-
+.form-search-box {
+    max-width: 44rem;
+    
+}
 .search-box{
     border-radius: 20px;
+    padding-left: 34px;
 }
 .search-box:focus{
     box-shadow: none;
     border: black solid 1px;
+}
+.fa-magnifying-glass{
+    padding-top: 10px;
+    padding-left: 10px ;
 }
