@@ -16,6 +16,9 @@ header{
 .navbar-nav {
     justify-content: space-between;
 }
+.navbar-nav .nav-item .nav-link:hover{
+    color: #5624d0 !important;
+}
 .nav-bar-right{
     gap: 10px;
 }
@@ -53,4 +56,52 @@ nav{
     flex: 1;
     display: flex;
     justify-content: center;
+}
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    font-size: 1.4rem;
+}
+
+.dropdown-item:hover{
+    background-color: #fff;
+    color: #5624d0 ;
+}
+
+.dropdown:after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 80px;
+}
+.categories-open{
+    padding: 0;
+}
+.categories-menu {
+    top: 54px;
+    height: 700px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+.categories-menu li{
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.categories-menu li:nth-child(2){
+    margin-left: -8px;
+}
+.categories-menu li:hover {
+    color: #5624d0 ;
+}
+.categories-menu  i{
+    padding-top: 6px;
 }
