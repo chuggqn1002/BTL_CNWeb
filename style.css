@@ -29,9 +29,9 @@ nav{
 .navbar__right ul{
     align-items: center;
 }
-.form-search-box {
+/* .form-search-box {
     
-}
+} */
 .search-box{
     border-radius: 30px;
     align-self: center;
@@ -87,7 +87,7 @@ nav{
     padding: 0;
 }
 .categories-menu {
-    top: 54px;
+    top: 46px;
     height: 700px;
     width: 300px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
@@ -104,4 +104,11 @@ nav{
 }
 .categories-menu  i{
     padding-top: 6px;
+}
+
+.UdemyBusiness-more {
+    width: 30rem;
+    top: 48px;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 }
