@@ -72,12 +72,13 @@ nav{
 }
 
 .dropdown-item:hover,
-.dropdown-item:hover a{
+.dropdown-item:hover > a{
     background-color: #fff;
     color: #5624d0 ;
 }
 
-.dropdown:after{
+
+.bridge-right:after{
     display: inline-block;
     content: "";
     position: absolute;
@@ -86,10 +87,10 @@ nav{
     height: 44px;
     width: 20px;
 }
-.categories-open{
+.categories{
     padding: 0;
 }
-.categories-open::after{
+.bridge-bot::after{
     display: inline-block;
     content: "";
     position: absolute;
@@ -100,9 +101,20 @@ nav{
 }
 .categories-menu {
     top: 46px;
-    height: 700px;
-    width: 300px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+.width-300{
+    width: 300px;
+}
+.height-700{
+    height: 700px;
+}
+li{
+    cursor: pointer;
+}
+li:hover h2{
+    cursor: text;
+    color: #000;
 }
 .categories-menu li{
     padding: 8px 16px;
@@ -111,8 +123,8 @@ nav{
 /* .categories-menu li:nth-child(2){
     margin-left: -8px;
 } */
-.categories-menu li:hover,
-.Development-menu li:hover {
+.categories-menu > li:hover,
+.Development-menu > li:hover {
     color: #5624d0 !important;
 }
 .categories-menu  i{
@@ -127,45 +139,55 @@ nav{
 }
 
 .Development-menu{
-    left: 284px;
+    left: 283px;
     top: -14px;
 }
 .Business-menu{
-    top: calc(-26px - 16px - 5px);
-    left: calc(100% + 18px);
+    top: -56px;
+    left: calc(100% + 17px);
 }
 .FinanceAcounting-menu{
     /* top: -376%; */
-    top: -99px;
-    left: calc(100% + 18px);
+    top: -98px;
+    left: calc(100% + 17px);
 }
 .ItSoftware-menu{
-
+    top: -140px;
+    left: calc(100% + 17px);
 }
 .OfficeProductivity-menu{
-
+    top: -182px;
+    left: calc(100% + 17px);    
 }
 .PersonalDevelopment-menu{
-
+    top: -224px;
+    left: calc(100% + 17px);
 }
 .Design-menu{
-
+    top: -266px;
+    left: calc(100% + 17px);
 }
 .Marketing-menu{
-
+    top: -308px;
+    left: calc(100% + 17px);
 }
 .Lifestyle-menu{
-
+    top: -350px;
+    left: calc(100% + 17px);
 }
 .PhotographyVideo-menu{
-
+    top: -392px;
+    left: calc(100% + 17px);
 }
 .HealthFitness-menu{
-
+    top: -434px;
+    left: calc(100% + 17px);
 }
 .Music-menu{
-
+    top: -476px;
+    left: calc(100% + 17px);
 }
 .TeachingAcademics-menu{
-    
+    top: -518px;
+    left: calc(100% + 17px);    
 }
