@@ -66,25 +66,37 @@ nav{
     bottom: 0;
     padding: 0;
 }
-.dropdown:hover .dropdown-menu{
+.dropdown:hover >.dropdown-menu{
     display: block;
     font-size: 1.4rem;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover,
+.dropdown-item:hover a{
     background-color: #fff;
     color: #5624d0 ;
 }
 
 .dropdown:after{
-    display: block;
+    display: inline-block;
     content: "";
     position: absolute;
-    height: 40px;
-    width: 80px;
+    left: 270px;
+    top: -12px;
+    height: 44px;
+    width: 20px;
 }
 .categories-open{
     padding: 0;
+}
+.categories-open::after{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 50px;
+    width: 78px;
 }
 .categories-menu {
     top: 46px;
@@ -96,11 +108,12 @@ nav{
     padding: 8px 16px;
     cursor: pointer;
 }
-.categories-menu li:nth-child(2){
+/* .categories-menu li:nth-child(2){
     margin-left: -8px;
-}
-.categories-menu li:hover {
-    color: #5624d0 ;
+} */
+.categories-menu li:hover,
+.Development-menu li:hover {
+    color: #5624d0 !important;
 }
 .categories-menu  i{
     padding-top: 6px;
@@ -111,4 +124,48 @@ nav{
     top: 48px;
     border-radius: 0;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.Development-menu{
+    left: 284px;
+    top: -14px;
+}
+.Business-menu{
+    top: calc(-26px - 16px - 5px);
+    left: calc(100% + 18px);
+}
+.FinanceAcounting-menu{
+    /* top: -376%; */
+    top: -99px;
+    left: calc(100% + 18px);
+}
+.ItSoftware-menu{
+
+}
+.OfficeProductivity-menu{
+
+}
+.PersonalDevelopment-menu{
+
+}
+.Design-menu{
+
+}
+.Marketing-menu{
+
+}
+.Lifestyle-menu{
+
+}
+.PhotographyVideo-menu{
+
+}
+.HealthFitness-menu{
+
+}
+.Music-menu{
+
+}
+.TeachingAcademics-menu{
+    
 }
