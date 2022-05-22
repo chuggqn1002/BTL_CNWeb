@@ -204,7 +204,54 @@ li:hover h2{
     top: -518px;
     left: calc(100% + 17px);    
 }
+/* mobile-nav */
+.modal-dialog{
+    width: 40%;
+}
+.modal-header a{
+    color: #5624d0;
+}
+.modal-body a,
+.modal-footer a{
+    color: #000;
+}
+/* .modal-body li:hover,
+.modal-body li:hover a,
+.modal-footer li:hover a {
+    color: #5624d0;
+} */
+.modal-body, .modal-footer{
+    overflow-y: unset !important;
+}
+.modal-content{
+    animation: spawn-menu 0.3s ease-in-out;
+    border: none;
+    overflow-y: auto !important;
+}
+.modal-footer button:hover{
+    color: #1c1d1f;
+    background-color: rgba(0,0,0,.04);
+}
+@keyframes spawn-menu{
+    0% {
+        left: -100%;
+        scale: 0;
+    }
+    100%{
+        left: 0;
+        scale: 1;
+    }
+}
+.btn-close{
+    left: 30rem;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 2rem;
+    opacity: 1;
+}
 
+/* main */
 .headline{
     max-width: 134rem;
     padding-top: 4.5rem;
@@ -321,75 +368,4 @@ li:hover h2{
 
 .img-wrapper{
     border: 1px solid #d1d7dc;
-}
-
-/* mobile-nav */
-.modal-dialog{
-    width: 40%;
-}
-.mobile-nav-header a{
-    color: #5624d0;
-}
-.mobile-nav-body a{
-    color: #000;
-}
-.mobile-nav-body li:hover,
-.mobile-nav-body li:hover a {
-    color: #5624d0;
-}
-
-/* font-adjust-for-element */
-
-.font-for-conteiner-banner{
-    color: #1c1d1f;
-    font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    line-height: 1.2;
-    letter-spacing: -.02rem;
-    font-size: 1.6rem;
-}
-
-.font-content{
-    color: #1c1d1f;
-    font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -.02rem;
-    font-size: 1.4rem;
-}
-
-.instructor-font{
-    color: #6a6f73;
-    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    font-weight: 400;
-    line-height: 1.4;
-    font-size: 1.2rem;
-}
-
-.course-card-review .font-content{  
-    margin-right: 0.4rem;
-    color: #b4690e;
-}
-
-/* star-rating */
-
-.star-rating-wrapper{
-    width: 7rem;
-    height: 1.6rem;
-}
-
-.rating-color{
-    color:#fbc634 !important;
-}
-
-/* pricing */
-
-.price-text{
-    padding: 0.4rem 0;
-    margin-right: 0.8rem;
-}
-
-.discount-text{
-    font-weight: 400;
-    text-decoration: line-through;
-    color: #6a6f73;
 }
