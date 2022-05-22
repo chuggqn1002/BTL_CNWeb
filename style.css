@@ -7,7 +7,10 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.6rem;
 }
 header{
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
@@ -316,14 +319,10 @@ li:hover h2{
     display: inline-flex;
 }
 
-.tab-pane .btn-tab span{
-    color: #1c1d1f;
-    font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -.02rem;
-    font-size: 1.4rem;
+.img-wrapper{
+    border: 1px solid #d1d7dc;
 }
+
 /* mobile-nav */
 .modal-dialog{
     width: 40%;
@@ -337,4 +336,60 @@ li:hover h2{
 .mobile-nav-body li:hover,
 .mobile-nav-body li:hover a {
     color: #5624d0;
+}
+
+/* font-adjust-for-element */
+
+.font-for-conteiner-banner{
+    color: #1c1d1f;
+    font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.6rem;
+}
+
+.font-content{
+    color: #1c1d1f;
+    font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.4rem;
+}
+
+.instructor-font{
+    color: #6a6f73;
+    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+.course-card-review .font-content{  
+    margin-right: 0.4rem;
+    color: #b4690e;
+}
+
+/* star-rating */
+
+.star-rating-wrapper{
+    width: 7rem;
+    height: 1.6rem;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+/* pricing */
+
+.price-text{
+    padding: 0.4rem 0;
+    margin-right: 0.8rem;
+}
+
+.discount-text{
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #6a6f73;
 }

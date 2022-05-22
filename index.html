@@ -9,49 +9,52 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="position-fixed start-0 modal-dialog-scrollable modal-dialog m-0 rounded-0 h-100">
-    <div class="modal-content rounded-0 h-100">
-      <div class="modal-header mobile-nav-header">
-        <ul class="list-unstyled">
-          <li><a class="text-decoration-none fs-3" href="#">Log in</a></li>
-          <li class="mt-3"><a class="text-decoration-none fs-3" href="#">Sign up</a></li>
-        </ul>
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-      </div>
-      <div class="modal-body mobile-nav-body">
-        <ul class="list-unstyled fs-3">
-          <div class="fw-bolder text-black-50">Most popular</div>
-          <li class="d-flex justify-content-between"><a class="text-decoration-none" href="#">Web Development</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="position-fixed start-0 modal-dialog-scrollable modal-dialog m-0 rounded-0 h-100">
+      <div class="modal-content rounded-0 h-100">
+        <div class="modal-header mobile-nav-header">
+          <ul class="list-unstyled">
+            <li><a class="text-decoration-none fs-3" href="#">Log in</a></li>
+            <li class="mt-3"><a class="text-decoration-none fs-3" href="#">Sign up</a></li>
+          </ul>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body mobile-nav-body">
+          <ul class="list-unstyled fs-3">
+            <div class="fw-bolder text-black-50">Most popular</div>
+            <li class="d-flex justify-content-between"><a class="text-decoration-none" href="#">Web Development</a><i
+                class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- header -->
+  <!-- header -->
   <header>
     <!-- nav reponsive -->
     <nav class="nav nav-tabs|pills d-md-none d-flex fixed-top align-items-center navbar__sm">
@@ -72,206 +75,263 @@
     <!-- nav -->
     <nav class="navbar navbar-expand-md navbar-light bg-light" style="padding: 0 1.5rem;">
       <div class="container-fluid d-none d-md-flex gap-4">
-        <a class=""  href="#">
+        <a class="" href="#">
           <img src="/images/logo-udemy.png" alt="">
         </a>
         <div class="navbar__right" style="flex: 9;" id="navbarSupportedContent">
           <ul class="navbar-nav mb-lg-0 nav-bar-right">
             <li class="nav-item">
               <div class="dropdown">
-                <a class="nav-link text-dark categories bridge-bot" id="dropdownMenuButton1" aria-current="page" href="#">
+                <a class="nav-link text-dark categories bridge-bot" id="dropdownMenuButton1" aria-current="page"
+                  href="#">
                   Categories
                 </a>
-                  <ul class="dropdown-menu categories-menu width-300 height-700 relative" aria-labelledby="dropdownMenuButton1">
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Development</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu Development-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Web Development</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Data Science</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Mobile Development</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
+                <ul class="dropdown-menu categories-menu width-300 height-700 relative"
+                  aria-labelledby="dropdownMenuButton1">
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Development</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Development-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Web
+                            Development</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Data
+                            Science</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Mobile Development</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
 
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Business</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu Business-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Entrepreneurship</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Communication</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Management</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Finance & Acounting</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu FinanceAcounting-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Accounting & Bookkeeping</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Compliance</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Cryptocurrency & Blockchain</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">IT & Software</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu ItSoftware-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">It Certifications</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Network & Security</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Hardware</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Office Productivity</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu OfficeProductivity-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Microsoft</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Apple</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Google</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Personal Development</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu PersonalDevelopment-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Personal Tranformation</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Personal Productivity</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Leader Ship</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Design</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu Design-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Web Design</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Graphic Design & Illustration</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Design Tools</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Marketing</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu Marketing-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Digital Marketing</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Search Engine Optimization</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Social Media Marketing</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Lifestyle</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu Lifestyle-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Art & Crafts</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Beaty & Makeup</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Esoteric Practices</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Photography & Video</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu PhotographyVideo-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Digital Photography</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Photography</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Portrait Photography</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Health & Fitness</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu HealthFitness-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Fitness</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">General Health</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Sports</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Music</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu Music-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Instruments</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Music Production</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Music Fuldamentals</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
-                    
-
-                    <li class="">
-                      <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
-                        <a class="dropdown-item" id="dropdownMenuButton2" href="#">Teaching & Academics</a>
-                        <i class="fa-solid fa-angle-right"></i>
-                        <ul class="width-300 height-700 dropdown-menu TeachingAcademics-menu absolute"aria-labelledby="dropdownMenuButton2">
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Engineering</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Humanities</a><i class="fa-solid fa-angle-right"></i></li>
-                          <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Math</a><i class="fa-solid fa-angle-right"></i></li>
-                        </ul>
-                      </div>
-                    </li>
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Business</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Business-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Entrepreneurship</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Communication</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Management</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
 
 
-                  </ul>
-                
-                
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Finance & Acounting</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu FinanceAcounting-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Accounting & Bookkeeping</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Compliance</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Cryptocurrency & Blockchain</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">IT & Software</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu ItSoftware-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">It
+                            Certifications</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Network & Security</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Hardware</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Office Productivity</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu OfficeProductivity-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Microsoft</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Apple</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Google</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Personal Development</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu PersonalDevelopment-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Personal Tranformation</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Personal Productivity</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Leader Ship</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Design</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Design-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Web
+                            Design</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Graphic Design & Illustration</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Design Tools</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Marketing</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Marketing-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Digital Marketing</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Search Engine Optimization</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Social Media Marketing</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Lifestyle</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Lifestyle-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Art &
+                            Crafts</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Beaty
+                            & Makeup</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Esoteric Practices</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Photography & Video</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu PhotographyVideo-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Digital Photography</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Photography</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Portrait Photography</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Health & Fitness</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu HealthFitness-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Fitness</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">General Health</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Sports</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Music</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Music-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Instruments</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Music
+                            Production</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Music
+                            Fuldamentals</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Teaching & Academics</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu TeachingAcademics-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Engineering</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Humanities</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Math</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                </ul>
+
+
               </div>
             </li>
             <li class="nav-item flex-grow-1">
               <form class="position-relative form-search-box">
-                <input class="search-box form-control fs-4" type="search" placeholder="Search for anything" aria-label="Search">
+                <input class="search-box form-control fs-4" type="search" placeholder="Search for anything"
+                  aria-label="Search">
                 <i class="searchicon-Form position-absolute top-0 start-0 fa-solid fa-magnifying-glass"></i>
               </form>
             </li>
             <li class="nav-item">
               <div class="dropdown">
                 <a class="nav-link bridge-bot text-dark" href="#">
-                Udemy Business
-                <div class="text-center dropdown-menu UdemyBusiness-more position-absolute end-0" aria-labelledby="dropdownMenuButton1">
-                  <h2 class="m-3">
-                    Get your team access to over 15,000 top Udemy courses, anytime, anywhere
-                  </h2>
-                  <a href="#"><button type="button" class="p-3 m-3 w-75 btn text-white fs-4 bg-dark">Sign up</button></a>
-                </div>
+                  Udemy Business
+                  <div class="text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
+                    aria-labelledby="dropdownMenuButton1">
+                    <h2 class="m-3">
+                      Get your team access to over 15,000 top Udemy courses, anytime, anywhere
+                    </h2>
+                    <a href="#"><button type="button" class="p-3 m-3 w-75 btn text-white fs-4 bg-dark">Sign
+                        up</button></a>
+                  </div>
                 </a>
               </div>
             </li>
@@ -279,27 +339,30 @@
               <div class="dropdown">
                 <a class="nav-link bridge-bot text-dark" href="#">
                   Teach On Udemy
-                  <div class="text-center dropdown-menu UdemyBusiness-more position-absolute end-0" aria-labelledby="dropdownMenuButton1">
+                  <div class="text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
+                    aria-labelledby="dropdownMenuButton1">
                     <h2 class="m-3">
-                      Turn what you know into an opportunity and reach millions around the world. 
+                      Turn what you know into an opportunity and reach millions around the world.
                     </h2>
-                    <a href="#"><button type="button" class="p-3 m-3 w-75 btn text-white fs-4 bg-dark">Learn more</button></a>
+                    <a href="#"><button type="button" class="p-3 m-3 w-75 btn text-white fs-4 bg-dark">Learn
+                        more</button></a>
                   </div>
                 </a>
               </div>
-              
+
             </li>
             <li class="nav-item d-flex align-items-center">
               <div class="dropdown">
                 <i class="bridge-bot fa-solid fa-cart-shopping"></i>
-                <div class="p-4 text-center dropdown-menu UdemyBusiness-more position-absolute end-0" aria-labelledby="dropdownMenuButton1">
+                <div class="p-4 text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
+                  aria-labelledby="dropdownMenuButton1">
                   <p class="m-3 text-black-50">
-                    Your cart is empty. 
+                    Your cart is empty.
                   </p>
                   <a class="text-decoration-none" href="#">Keep shopping</a>
                 </div>
               </div>
-              
+
             </li>
             <li class="nav-item d-flex align-items-center">
               <button type="button" class="btn btn-outline-dark fs-4">Log in</button>
@@ -326,18 +389,22 @@
           <img src="/images/slider2.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    
+
   </main>
 
+  <!-- content -->
+  <!-- headline-content -->
   <main>
     <div class="headline mx-auto">
       <div class="headline-maintext">A broad selection of courses</div>
@@ -345,101 +412,1671 @@
       </div>
     </div>
 
-    
+
     <nav class="heading-tab">
       <div class="nav nav-tabs headline mx-auto" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-Python" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Python</button>
-        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-Excel" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Excel</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-WebDevelopment" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Web Development</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-JavaScript" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">JavaScript</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-DataScience" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Data Science</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-AWSCertifications" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">AWS Certifications</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-Drawing" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Drawing</button>
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-Python"
+          type="button" role="tab" aria-controls="nav-home" aria-selected="true">Python</button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-Excel" type="button"
+          role="tab" aria-controls="nav-profile" aria-selected="false">Excel</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-WebDevelopment"
+          type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Web Development</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-JavaScript"
+          type="button" role="tab" aria-controls="nav-contact" aria-selected="false">JavaScript</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-DataScience"
+          type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Data Science</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-AWSCertifications"
+          type="button" role="tab" aria-controls="nav-contact" aria-selected="false">AWS Certifications</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-Drawing" type="button"
+          role="tab" aria-controls="nav-contact" aria-selected="false">Drawing</button>
       </div>
     </nav>
+
+    <!-- container-content -->
     <div class="tab-content headline mx-auto" id="nav-tabContent">
+      <!-- python-container -->
       <div class="tab-pane fade show active" id="nav-Python" role="tabpanel" aria-labelledby="nav-home-tab">
-          <div>
-            <h3>Expand your career opportunities with Python</h3>
-            <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, 
-              and machine learning. You’ll learn how to build everything from games to sites to apps. 
-              Choose from a range of courses that will appeal to</p>
-          </div>
-          <a class="btn-tab modified-btn" href="">
-            <span>Explore Python</span>
-          </a>
+
+      <div>
+        <h3>Expand your career opportunities with Python</h3>
+        <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its
+          simple syntax and readability makes Python perfect for Flask, Django, data science,
+          and machine learning. You’ll learn how to build everything from games to sites to apps.
+          Choose from a range of courses that will appeal to</p>
       </div>
+      <a class="btn-tab modified-btn" href="">
+        <span class="font-content">Explore Python</span>
+      </a>
+
+        <div class="container px-0 mt-5">
+          <div class="row d-flex justify-content-center">
+            <!-- first-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/container-1.jpg" height="135" width="240" alt="">
+              </div>
+              
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font mb-2">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,191)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- second-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/container-2.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.7</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (17,619)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- third-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/container-3.jpg" height="135" width="240" alt="">
+              </div> 
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.6</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1.367)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fourth-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/container-4.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,884)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$10.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fifth-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/container-5.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.4</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1,564)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Excel-container -->
       <div class="tab-pane fade" id="nav-Excel" role="tabpanel" aria-labelledby="nav-profile-tab">
         <div>
           <h3>Analyze and visualize data with Excel</h3>
-          <p>Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world experts will show you the basics like how to organize data into sheets, rows and columns, 
-            and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies use Excel to turn their raw data into actionable insights.</p>
+          <p>Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world
+            experts will show you the basics like how to organize data into sheets, rows and columns,
+            and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies
+            use Excel to turn their raw data into actionable insights.</p>
         </div>
         <a class="btn-tab modified-btn" href="">
-          <span>Explore Excel</span>
+          <span class="font-content">Explore Excel</span>
         </a>
+
+        <div class="container px-0 mt-5">
+          <div class="row d-flex justify-content-center">
+            <!-- first-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-1.jpg" height="135" width="240" alt="">
+              </div>
+              
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font mb-2">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,191)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- second-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-2.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.7</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (17,619)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- third-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-3.jpg" height="135" width="240" alt="">
+              </div> 
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.6</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1.367)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fourth-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-4.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,884)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$10.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fifth-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-5.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.4</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1,564)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+
+            </div>
+            
+          </div>
+        </div>
+
       </div>
+      <!-- Web-Dev-container -->
       <div class="tab-pane fade" id="nav-WebDevelopment" role="tabpanel" aria-labelledby="nav-contact-tab">
         <div>
           <h3>Build websites and applications with Web Development</h3>
-          <p>The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and 
+          <p>The world of web development is as wide as the internet itself. Much of our social and vocational lives
+            play out on the internet, which prompts new industries aimed at creating, managing, and
             debugging the websites and applications that we increasingly rely on.</p>
         </div>
         <a class="btn-tab modified-btn" href="">
-          <span>Explore Web Development</span>
+          <span class="font-content">Explore Web Development</span>
         </a>
+
+        <div class="container px-0 mt-5">
+          <div class="row d-flex justify-content-center">
+            <!-- first-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/3/container-1.jpg" height="135" width="240" alt="">
+              </div>
+              
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font mb-2">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,191)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- second-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/3/container-2.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.7</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (17,619)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- third-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/3/container-3.jpg" height="135" width="240" alt="">
+              </div> 
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.6</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1.367)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fourth-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/3/container-4.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,884)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$10.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fifth-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/3/container-3.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.4</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1,564)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+
+            </div>
+            
+          </div>
+        </div>
+
       </div>
+
       <div class="tab-pane fade" id="nav-JavaScript" role="tabpanel" aria-labelledby="nav-contact-tab">
         <div>
           <h3>Grow your software development skills with JavaScript</h3>
-          <p>JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels,
-               displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build</p>
+          <p>JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for
+            aspiring web developers or programmers, JavaScript can be used for features like image carousels,
+            displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can
+            learn to build</p>
         </div>
         <a class="btn-tab modified-btn" href="">
-          <span>Explore JavaScript</span>
+          <span class="font-content">Explore JavaScript</span>
         </a>
+
+        <div class="container px-0 mt-5">
+          <div class="row d-flex justify-content-center">
+            <!-- first-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-1.jpg" height="135" width="240" alt="">
+              </div>
+              
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font mb-2">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,191)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- second-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-2.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.7</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (17,619)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- third-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-3.jpg" height="135" width="240" alt="">
+              </div> 
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.6</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1.367)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fourth-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-4.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,884)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$10.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fifth-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-5.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.4</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1,564)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+
+            </div>
+            
+          </div>
+        </div>
+
       </div>
+
       <div class="tab-pane fade" id="nav-DataScience" role="tabpanel" aria-labelledby="nav-contact-tab">
         <div>
           <h3>Lead data-driven decisions with Data Science</h3>
-          <p>Data science application is an in-demand skill in many industries worldwide — including finance, transportation, education, manufacturing, human resources, and banking. Explore data science courses with Python, 
-            statistics, machine learning, and more to grow your knowledge. Get data science training if you’re into research, statistics,</p>
+          <p>Data science application is an in-demand skill in many industries worldwide — including finance,
+            transportation, education, manufacturing, human resources, and banking. Explore data science courses with
+            Python,
+            statistics, machine learning, and more to grow your knowledge. Get data science training if you’re into
+            research, statistics,</p>
         </div>
         <a class="btn-tab modified-btn" href="">
-          <span>Explore Data Science</span>
+          <span class="font-content">Explore Data Science</span>
         </a>
+
+        <div class="container px-0 mt-5">
+          <div class="row d-flex justify-content-center">
+            <!-- first-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-1.jpg" height="135" width="240" alt="">
+              </div>
+              
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font mb-2">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,191)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- second-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-2.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.7</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (17,619)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- third-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-3.jpg" height="135" width="240" alt="">
+              </div> 
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.6</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1.367)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fourth-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-4.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,884)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$10.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fifth-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-5.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.4</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1,564)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+
+            </div>
+            
+          </div>
+        </div>
+
       </div>
+
       <div class="tab-pane fade" id="nav-AWSCertifications" role="tabpanel" aria-labelledby="nav-contact-tab">
         <div>
           <h3>Become an expert in cloud computing with AWS Certification</h3>
-          <p>Prep for your AWS certification with an AWS course on Udemy. Learn the fundamentals of AWS such as working with a serverless platform, the various frameworks, security and more. With these courses, you’ll build
-             the valuable skills you need to implement cloud initiatives — and open up new career opportunities. If you want to</p>
+          <p>Prep for your AWS certification with an AWS course on Udemy. Learn the fundamentals of AWS such as working
+            with a serverless platform, the various frameworks, security and more. With these courses, you’ll build
+            the valuable skills you need to implement cloud initiatives — and open up new career opportunities. If you
+            want to</p>
         </div>
         <a class="btn-tab modified-btn" href="">
-          <span>Explore AWS Certification</span>
+          <span class="font-content">Explore AWS Certification</span>
         </a>
+
+        <div class="container px-0 mt-5">
+          <div class="row d-flex justify-content-center">
+            <!-- first-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-1.jpg" height="135" width="240" alt="">
+              </div>
+              
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font mb-2">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,191)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- second-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-2.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.7</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (17,619)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- third-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-3.jpg" height="135" width="240" alt="">
+              </div> 
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.6</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1.367)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fourth-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-4.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,884)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$10.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fifth-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-5.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.4</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1,564)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+
+            </div>
+            
+          </div>
+        </div>
+
       </div>
+
       <div class="tab-pane fade" id="nav-Drawing" role="tabpanel" aria-labelledby="nav-contact-tab">
         <div>
           <h3>Expand your creative skillset with Drawing</h3>
-          <p>Want to start drawing for fun or take your craft to the next level? Explore our online drawing classes and learn pencil drawing, figure drawing, cartoon drawing, character drawing for cartoons and anime, illustration
-            , sketching, shading and more. Take an overview course on the fundamentals of drawing or zero in on an area</p>
+          <p>Want to start drawing for fun or take your craft to the next level? Explore our online drawing classes and
+            learn pencil drawing, figure drawing, cartoon drawing, character drawing for cartoons and anime,
+            illustration
+            , sketching, shading and more. Take an overview course on the fundamentals of drawing or zero in on an area
+          </p>
         </div>
         <a class="btn-tab modified-btn" href="">
-          <span>Explore Drawing</span>
+          <span class="font-content">Explore Drawing</span>
         </a>
+
+        <div class="container px-0 mt-5">
+          <div class="row d-flex justify-content-center">
+            <!-- first-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-1.jpg" height="135" width="240" alt="">
+              </div>
+              
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font mb-2">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,191)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- second-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-2.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.7</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (17,619)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- third-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-3.jpg" height="135" width="240" alt="">
+              </div> 
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.6</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1.367)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fourth-container -->
+            <div class="col">
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-4.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.3</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (2,884)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$10.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- fifth-container -->
+            <div class="col" >
+              <div class="img-wrapper">
+                <img src="./images/container-content/2/container-5.jpg" height="135" width="240" alt="">
+              </div>
+              <div class="course-card mt-2 mb-1">
+                <h3>
+                  <a class="font-for-conteiner-banner" href="">Learn Python: The Complete Python Programming Course</a>
+                </h3>
+              </div>
+              <div class="instructor-font">
+                <div class="course-card-instr">Avinash Jain, The Codex</div>
+              </div>
+              <div class="course-card-review d-flex">
+                <span class="star-rating d-flex">
+                  <span class="font-content">4.4</span>
+                  <div class="">
+                    <div class="ratings star-rating-wrapper fs-6">
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star rating-color"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                </span>
+                <span class="reviews instructor-font">
+                  (1,564)
+                </span>
+              </div>
+              
+              <div class="course-card-pricing d-flex align-items-center">
+                <div class="price-text">
+                  <span style="font-weight: 700;">$9.99</span>
+                </div>
+
+                <div class="discount-pricing font-content">
+                  <span class="discount-text">$84.99</span>
+                </div>
+              </div>
+
+
+            </div>
+            
+          </div>
+        </div>
+
       </div>
+
     </div>
+
+
   </main>
 
   <footer>
-
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam ex hic cum, aliquid tenetur quam earum consequuntur ipsum mollitia voluptatem natus voluptatibus dicta deleniti molestias quae quod debitis. Voluptatum.
   </footer>
   <!-- JavaScript Bundle with Popper -->
   <!-- Button trigger modal -->
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
