@@ -1,0 +1,39 @@
+.main-content .content{
+    width: 38rem;
+}
+.link-social a{
+    box-shadow: 0 2px 2px 0 rgb(28 29 31 / 24%), 0 0 2px 0 rgb(28 29 31 / 12%);
+}
+.content form input:focus
+{
+   border-color: #1c1d1f;
+    
+}
+.content form input{
+    border: 1px solid #1c1d1f;
+    border-radius: 0;
+    padding: 10px 36px 10px;
+    font-size: 1.4rem !important;
+}
+.link-social a:hover{
+    color: #401b9c !important;
+}
+form .fa-envelope,
+form .fa-lock{
+    opacity: .7;
+    left: .6rem;
+    top: 1.4rem;
+}
+form button{
+    background-color: #a435f0 !important;
+    color: white !important;
+}
+form button:hover{
+    background-color: #7325a3 !important;
+}
+form a{
+    color: #5624d0;
+}
+.content div a{
+    color: #5624d0;
+}
