@@ -363,19 +363,20 @@ input:focus ~ .fa-magnifying-glass{
     color: #1c1d1f;
 }
 
-.heading-tab .nav-tabs .nav-link:hover{
-    border: none;
+.nav-tabs .nav-link:hover{
+    border: 1px solid #fff;
     color: #1c1d1f;
     cursor: pointer;
 }
 
-.heading-tab .nav-tabs .nav-link:focus-visible{
-    outline: none;
-    border: none;
+.nav-tabs .nav-link:focus-visible {
+    border: 1px solid #fff;
+    outline-color: #fff;
 }
 
-.heading-tab .nav-tabs .nav-link:focus{
-    border: none;
+.nav-tabs .nav-link:focus {
+    border: 1px solid #fff;
+    outline-color: #fff;
 }
 
 .tab-pane h3{
@@ -419,6 +420,10 @@ input:focus ~ .fa-magnifying-glass{
 
 .img-wrapper{
     border: 1px solid #d1d7dc;
+}
+
+.img-wrapper img{
+    width: 100%;
 }
 
 /* mobile-nav */
@@ -490,4 +495,10 @@ input:focus ~ .fa-magnifying-glass{
     font-weight: 400;
     text-decoration: line-through;
     color: #6a6f73;
+}
+
+/* banner */
+
+.banner-container{
+    
 }
