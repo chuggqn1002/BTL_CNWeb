@@ -78,26 +78,41 @@
       </div>
     </div>
   </div>
+  <!-- form search for mobile -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog h-100 w-100 m-0 mw-100">
+    <div class="modal-content rounded-0 h-100 px-3">
+      <div class="modal-header d-flex">
+        <i class="fa-solid fa-magnifying-glass py-3"></i>
+        <input type="search" name="" id="" class="border-0 flex-grow-1 mx-3 py-3" placeholder="Search for anything">
+        <button type="button" class="btn-close py-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
   <!-- header -->
   <header>
     <!-- nav reponsive -->
-    <nav class="nav nav-tabs|pills d-md-none d-flex fixed-top align-items-center navbar__sm">
+    <nav class="nav d-md-none d-flex align-items-center navbar-mobile">
       <a class="nav-link" href="#" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <i class="fa-solid fa-bars"></i>
       </a>
       <a class="nav-link" href="#">
         <img src="./images/logo-udemy.png" alt="">
       </a>
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
         <i class="fa-solid fa-magnifying-glass"></i>
       </a>
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="#" >
         <i class="fa-solid fa-cart-shopping"></i>
       </a>
     </nav>
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light" style="padding: 0 1.5rem;">
+    <nav class="navbar navbar-expand-md d-none d-md-flex navbar-light bg-light" style="padding: 0 1.5rem;">
       <div class="container-fluid d-none d-md-flex gap-4">
         <a class="" href="#">
           <img src="./images/logo-udemy.png" alt="">
