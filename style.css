@@ -86,6 +86,9 @@ nav{
     display: block;
     font-size: 1.4rem;
 }
+.dropdown:hover{
+    cursor: pointer;
+}
 
 .dropdown-item:hover,
 .dropdown-item:hover > a{
@@ -111,13 +114,13 @@ nav{
     padding: 0;
 }
 .bridge-bot::after{
-    display: inline-block;
+    display: block;
     content: "";
     position: absolute;
-    left: -30px;
+    left: -10px;
     top: 100%;
     height: 50px;
-    width: 78px;
+    width: 120%;
 }
 .categories-menu {
     top: 46px;
@@ -153,7 +156,7 @@ li:hover h2{
 
 .UdemyBusiness-more {
     width: 30rem;
-    top: 48px;
+    top: 52px;
     border-radius: 0;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 }
@@ -163,52 +166,52 @@ li:hover h2{
     top: -14px;
 }
 .Business-menu{
-    top: -56px;
+    top: -5.4rem;
     left: calc(100% + 17px);
 }
 .FinanceAcounting-menu{
     /* top: -376%; */
-    top: -98px;
+    top: -9.5rem;
     left: calc(100% + 17px);
 }
 .ItSoftware-menu{
-    top: -140px;
+    top: -13.5rem;
     left: calc(100% + 17px);
 }
 .OfficeProductivity-menu{
-    top: -182px;
+    top: -17.6rem;
     left: calc(100% + 17px);    
 }
 .PersonalDevelopment-menu{
-    top: -224px;
+    top: -21.7rem;
     left: calc(100% + 17px);
 }
 .Design-menu{
-    top: -266px;
+    top: -25.8rem;
     left: calc(100% + 17px);
 }
 .Marketing-menu{
-    top: -308px;
+    top: -29.8rem;
     left: calc(100% + 17px);
 }
 .Lifestyle-menu{
-    top: -350px;
+    top: -33.8rem;
     left: calc(100% + 17px);
 }
 .PhotographyVideo-menu{
-    top: -392px;
+    top: -38rem;
     left: calc(100% + 17px);
 }
 .HealthFitness-menu{
-    top: -434px;
+    top: -42rem;
     left: calc(100% + 17px);
 }
 .Music-menu{
-    top: -476px;
+    top: -46rem;
     left: calc(100% + 17px);
 }
 .TeachingAcademics-menu{
-    top: -518px;
+    top: -50.1rem;
     left: calc(100% + 17px);    
 }
 /* mobile-nav */
@@ -506,10 +509,6 @@ input:focus ~ .fa-magnifying-glass{
     background: #f7f9fa;
     border: 0;
     padding: 2.4rem 0;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
 }
 
 .banner-container{
