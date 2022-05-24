@@ -379,7 +379,8 @@ input:focus ~ .fa-magnifying-glass{
     outline-color: #fff;
 }
 
-.tab-pane h3{
+.tab-pane h3,
+.course-card h3{
     margin-bottom: 0.8rem;
     max-width: 80rem;
     font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
@@ -411,11 +412,6 @@ input:focus ~ .fa-magnifying-glass{
     min-width: 8rem;
     padding: 0 1.2rem;
     justify-content: center;
-}
-
-.tab-pane a{
-    text-decoration: none;
-    display: inline-flex;
 }
 
 .img-wrapper{
@@ -473,6 +469,12 @@ input:focus ~ .fa-magnifying-glass{
     color: #b4690e;
 }
 
+.tab-pane a,
+.course-card a{
+    text-decoration: none;
+    display: inline-flex;
+}
+
 /* star-rating */
 
 .star-rating-wrapper{
@@ -499,6 +501,73 @@ input:focus ~ .fa-magnifying-glass{
 
 /* banner */
 
+.banner-component{
+    margin-top: 6.4rem;
+    background: #f7f9fa;
+    border: 0;
+    padding: 2.4rem 0;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
 .banner-container{
-    
+    width: 100%;
+    max-width: 134rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* icon-for-banner */
+
+.banner-container .pros-back-ground{
+    background: #d1d7dc;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .pros-graphic{
+    margin-right: 1.6rem;
+}
+
+.banner-container .text-pros{
+    max-width: 28.8rem;
+}
+
+.banner-container .font-banner{
+    font-size: 1.6rem !important;
+}
+
+.banner-container .adj-col{
+    margin: 0 0 0 4.8rem;
+
+}
+
+/* banner-2 */
+.banner-component-2{
+    margin-top: 6.4rem;
+}
+
+.title-banner-2{
+    margin-bottom: 1.6rem;
+
+}
+
+.title-banner-2 h2{
+    max-width: 80rem;
+}
+
+
+.udlite-container {
+    width: 100%;
+    max-width: 134rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
 }
