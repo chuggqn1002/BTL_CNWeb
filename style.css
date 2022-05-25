@@ -548,6 +548,7 @@ input:focus ~ .fa-magnifying-glass{
 }
 
 /* banner-2 */
+.categories-component,
 .banner-component-2{
     margin-top: 6.4rem;
 }
@@ -569,4 +570,18 @@ input:focus ~ .fa-magnifying-glass{
     margin-left: auto;
     padding-right: 2.4rem;
     padding-left: 2.4rem;
+}
+
+/* categories */
+
+.top-categories-img{
+    overflow: hidden;
+}
+
+.top-categories-img img{
+    width: 100%;
+}
+
+.top-categories-img:hover img{
+    transform: scale(1.1);
 }
