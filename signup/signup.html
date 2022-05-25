@@ -15,7 +15,7 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="./signup.css">
   <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -421,39 +421,27 @@
 
 
 
-
-  <!-- form log in -->
+  <!-- form - sign in -->
   <div class="main-content">
     <div class="content mx-auto mt-3">
-      <div class="title p-5 fw-bold">Log In to Your Udemy Account!</div>
-      <span class="link-social d-flex flex-column border-top pt-4 px-5">
-        <a class="fw-bolder text-decoration-none text-dark mb-3 p-3" href="https://www.facebook.com/">
-          <i class="fa-brands fa-facebook text-primary me-3"></i>
-          Continue with Facebook
-        </a>
-        <a class="fw-bolder text-decoration-none text-dark mb-3 p-3" href="https://www.google.com/">
-          <i class="fa-brands fa-google me-3"></i>
-          Continue with Google
-        </a>
-        <a class="fw-bolder text-dark text-decoration-none mb-3 p-3" href="https://www.apple.com/">
-          <i class="fa-brands fa-apple text-dark me-3"></i>
-          Continue with Apple
-        </a>
-      </span>
-      <form class="px-5" id="form-signin">
-        <div class="mb-3 position-relative">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Email" required>
-          <i class="fa-solid fa-envelope position-absolute"></i>
+        <div class="fw-bold px-5 mb-3 mt-5">
+            Sign up and start learning
         </div>
-        <div class="mb-3 position-relative">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-          <i class="fa-solid fa-lock position-absolute"></i>
+      <form class="px-5" id="form-signup">
+        <div class="position-relative mb-3 position-relative">
+              <input type="text" class="border-dark rounded-0 px-4 pt-5 fs-4 form-control" name="" id="exampleInputFullName1" aria-describedby="helpId" placeholder="" required>     
+              <label class="default-label fw-bold position-absolute" for="exampleInputFullName1" >Full Name</label> 
         </div>
-        <button id="submit" type="submit" class="btn w-100 rounded-0 py-3 fs-4 fw-semibold">Log in</button>
-        <div class="text-center mt-4">
-          or <a class="text-decoration-none" href="#">Forgot Password</a>
+        <div class="position-relative mb-3 position-relative">
+          <input type="email" class="border-dark rounded-0 px-4 pt-5 fs-4 form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="" required> 
+            <label class="default-label fw-bold position-absolute" for="exampleInputEmail1">Email</label>       
         </div>
+        <div class="position-relative mb-3 position-relative">
+          <input type="password" class="border-dark rounded-0 px-4 pt-5 fs-4 form-control" id="exampleInputPassword1" placeholder="" required>        
+            <label class="default-label fw-bold position-absolute" for="exampleInputPassword1">Password</label>
+        </div>
+        <button id="submit" type="submit" class="border-0 w-100 rounded-0 p-4 fs-4 fw-semibold">Sign up</button>
       </form>
       <div class="my-5 text-center">
         <div class="mb-3">
@@ -474,7 +462,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <script src="./login.js"></script>
+  <script src="./signup.js"></script>
 </body>
 
 </html>
