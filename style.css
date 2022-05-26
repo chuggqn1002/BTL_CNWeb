@@ -547,6 +547,17 @@ input:focus ~ .fa-magnifying-glass{
 
 }
 
+@media (max-width: 43.75em) {
+    .adj-cols{
+        margin-left: 0;
+        margin-top: 2.4rem;
+    }
+
+    .banner-respon{
+        flex-direction: column;
+    }
+}
+
 /* banner-2 */
 .categories-component,
 .banner-component-2{
