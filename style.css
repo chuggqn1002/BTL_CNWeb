@@ -349,7 +349,35 @@ input:focus ~ .fa-magnifying-glass{
 .heading-tab .nav-tabs{
     border: none;
     padding: 1.0rem;
+}
 
+.responsive-tabs .heading-tab {
+    display: none;
+}
+
+@media (min-width: 768px){
+    .responsive-tabs .heading-tab {
+        display: flex;
+    }
+
+    .responsive-tabs .card {
+        border: none;
+    }
+
+    .responsive-tabs .card-header {
+        display: none;
+    }
+
+    .responsive-tabs .collapse {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .responsive-tabs .tab-pane {
+        display: block !important;
+        opacity: 1;
+    }
 }
 
 .heading-tab .nav-tabs button{
