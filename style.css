@@ -625,3 +625,14 @@ input:focus ~ .fa-magnifying-glass{
     transform: scale(1.1);
 }
 
+/* Featured topics by category */
+
+.featured-topic a{
+    color: #5624d0;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.featured-topic {
+    background-color: #F7F9FA;
+}
