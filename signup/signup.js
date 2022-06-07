@@ -66,3 +66,79 @@ input_password.onfocus = function() {
     label_password.classList.add('moved-label');
 }
 
+const email = document.getElementById('exampleInputEmail1');
+const password = document.getElementById('exampleInputPassword1');
+const submit = document.getElementById('submit');
+const form = document.getElementById('form-signup');
+password.oninput = function() {
+    if(password.value.length < 6 ){
+        password.setCustomValidity('Mật khẩu phải chứa 6 ký tự trở lên (Bạn đang nhập ' + password.value.length +' ký tự)' );
+    }
+    else{
+        password.setCustomValidity('');
+    }
+}
+
+var pw1 = document.getElementById('password-level1');
+var pw2 = document.getElementById('password-level2');
+var pw3 = document.getElementById('password-level3');
+var pw4 = document.getElementById('password-level4');
+var password_alert = document.getElementById('password-alert');
+password.oninput = () => {
+    if (password.value.length == 0) {
+        pw1.classList.add('bg-secondary');
+        pw1.classList.add('bg-opacity-50');
+
+        password_alert.textContent = '';
+    }
+    else if (password.value.length <=6) {
+        pw1.classList.add('bg-dark');
+        pw1.classList.remove('bg-opacity-50');
+
+        pw2.classList.add('bg-secondary');
+        pw2.classList.add('bg-opacity-50');
+
+        password_alert.textContent = 'Too weak';
+    }
+    else if (password.value.length <=8) {
+        pw2.classList.add('bg-dark');
+        pw2.classList.remove('bg-opacity-50');
+
+        pw3.classList.add('bg-secondary');
+        pw3.classList.add('bg-opacity-50');
+
+        password_alert.textContent = 'Could be stronger';
+
+    }
+    else if (password.value.length <=10) {
+        pw3.classList.add('bg-dark');
+        pw3.classList.remove('bg-opacity-50');
+
+        pw4.classList.add('bg-secondary');
+        pw4.classList.add('bg-opacity-50');
+
+        password_alert.textContent = 'Strong password';
+    }
+    else if (password.value.length <=12) {
+        pw4.classList.add('bg-dark');
+        pw4.classList.remove('bg-opacity-50');
+
+        password_alert.textContent = 'Very strong password';
+
+    }
+}
+//An hien mat khau
+
+var eyes = document.getElementById('eyes');
+eyes.onclick = () => {
+    eyes.classList.toggle('fa-eye');
+    eyes.classList.toggle('fa-eye-slash');
+
+    if(eyes.classList.contains('fa-eye')){
+        password.setAttribute('type','password');
+    }
+    else if (eyes.classList.contains('fa-eye-slash')) {
+        password.setAttribute('type','text');
+    }
+
+}
