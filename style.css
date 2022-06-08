@@ -27,7 +27,7 @@ header{
     color: #5624d0 !important;
 }
 .nav-bar-right{
-    gap: 10px;
+    gap: 2rem;
 }
 nav{
     height: 7.2rem;
@@ -95,8 +95,8 @@ nav{
     background-color: #fff;
     color: #5624d0 ;
 }
-.fa-cart-shopping:hover,
-.fa-cart-shopping:hover ~ div a{
+i:hover,
+i:hover ~ div a{
     color: #5624d0 ;
 }
 

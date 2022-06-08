@@ -85,43 +85,46 @@ var pw3 = document.getElementById('password-level3');
 var pw4 = document.getElementById('password-level4');
 var password_alert = document.getElementById('password-alert');
 password.oninput = () => {
-    if (password.value.length == 0) {
+    //mat khau it nhat 6 ki tu
+    if(password.value.length < 6 ){
+        password.setCustomValidity('Mật khẩu phải chứa 6 ký tự trở lên (Bạn đang nhập ' + password.value.length +' ký tự)' );
+    }
+    else{
+        password.setCustomValidity('');
+    }
+    //do bao mat
+    if (password.value.length <= 6) {
         pw1.classList.add('bg-secondary');
-        pw1.classList.add('bg-opacity-50');
-
+        pw1.classList.remove('bg-dark');
         password_alert.textContent = '';
     }
-    else if (password.value.length <=6) {
+    else if (password.value.length <=8) {
         pw1.classList.add('bg-dark');
-        pw1.classList.remove('bg-opacity-50');
 
         pw2.classList.add('bg-secondary');
-        pw2.classList.add('bg-opacity-50');
+        pw2.classList.remove('bg-dark');
 
         password_alert.textContent = 'Too weak';
     }
-    else if (password.value.length <=8) {
+    else if (password.value.length <=10) {
         pw2.classList.add('bg-dark');
-        pw2.classList.remove('bg-opacity-50');
 
         pw3.classList.add('bg-secondary');
-        pw3.classList.add('bg-opacity-50');
+        pw3.classList.remove('bg-dark');
 
         password_alert.textContent = 'Could be stronger';
 
     }
-    else if (password.value.length <=10) {
+    else if (password.value.length <=12) {
         pw3.classList.add('bg-dark');
-        pw3.classList.remove('bg-opacity-50');
 
         pw4.classList.add('bg-secondary');
-        pw4.classList.add('bg-opacity-50');
+        pw4.classList.remove('bg-dark');
 
         password_alert.textContent = 'Strong password';
     }
-    else if (password.value.length <=12) {
+    else if (password.value.length <=14) {
         pw4.classList.add('bg-dark');
-        pw4.classList.remove('bg-opacity-50');
 
         password_alert.textContent = 'Very strong password';
 
@@ -142,3 +145,32 @@ eyes.onclick = () => {
     }
 
 }
+
+//Dang ki tai khoan
+var form_signUp = document.getElementById('form-signup');
+form_signUp.onsubmit = (e) => {
+    e.preventDefault();
+
+    let users = JSON.parse(localStorage.getItem('users')) ? JSON.parse(localStorage.getItem('users')) : [];
+    let user = {
+        Name: input_fullname.value,
+        Email: input_email.value,
+        Password: input_password.value
+    }
+    if(users.every((user)=>{
+        return (input_fullname.value != user.Name && input_email.value != user.Email)
+    })) {
+    users.push(user);
+    alert('Creat account successfully')
+    }
+    else alert('Account already exists');
+    localStorage.setItem('users', JSON.stringify(users))
+    
+    // let users = JSON.stringify(localStorage);
+    // console.log(users)
+
+    input_fullname.value = '';
+    input_password.value = '';
+    input_email.value = '';
+}
+//console.log(localStorage.length)

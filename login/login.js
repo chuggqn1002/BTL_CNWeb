@@ -12,11 +12,18 @@ password.oninput = function() {
 }
 form.onsubmit = function(e) {
     e.preventDefault();
+    //admin page
     if(email.value === 'admin@gmail.com' && password.value === 'admin2022') {
         console.log('sign in');
-        location.href = 'https://google.com/';
+        window.location.href = 'https://google.com/';
     }
-    
+    //log in
+    let users = JSON.parse(localStorage.getItem('users')) ? JSON.parse(localStorage.getItem('users')) : [];
+    if(users.some((user) => {
+        return (email.value == user.Email && password.value == user.Password)
+    })){
+        window.location.href = '../account/account.html';
+    }
 }
 // submit.onclick = function() {
 //     location.href = 'https://google.com/';
