@@ -22,6 +22,13 @@ form.onsubmit = function(e) {
     if(users.some((user) => {
         return (email.value == user.Email && password.value == user.Password)
     })){
+        //localStorage.setItem('account',JSON.stringify({Name:input_fullname.value, Email:input_email.value}))
+        for(let i in users) {
+            if(email.value == users[i].Email && password.value == users[i].Password){
+                localStorage.setItem('log in',JSON.stringify({Name:users[i].Name, Email:users[i].Email}))
+                break
+            }
+        }
         window.location.href = '../account/account.html';
     }
 }
@@ -29,3 +36,4 @@ form.onsubmit = function(e) {
 //     location.href = 'https://google.com/';
 //     console.log('đ');
 // }
+console.log([1,2,3].map((item)=>{ if(item == 2) return item}))

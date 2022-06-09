@@ -159,7 +159,7 @@ form_signUp.onsubmit = (e) => {
     }
     if(users.every((user)=>{
         return (input_fullname.value != user.Name && input_email.value != user.Email)
-    })) {
+    }) && input_email.value != 'admin@gmail.com') {
     users.push(user);
     alert('Creat account successfully')
     }
