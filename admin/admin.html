@@ -8,111 +8,63 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./admin.css">
-    
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-    </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
-    <main class="d-flex flex-nowrap">
+    <main class="d-flex">
         <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <img src="../images/logo-udemy.png" class="bi pe-none me-2">
                 <span class="fs-4 sidebar-title">Admin Page</span>
             </a>
             <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
-                        <i class="fa-solid fa-book me-2"></i>
+            <ul class="nav nav-pills flex-column mb-auto" id="pills-tab" role="tablist" aria-orientation="vertical">
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link active" id="pills-course-tab" data-bs-toggle="pill" 
+                    data-bs-target="#pills-course" type="button" role="tab" aria-controls="pills-course" aria-selected="true" aria-current="page" >
+                        <i class="fa-solid fa-book me-3"></i>
                         Course
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2" />
-                        </svg>
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link link-dark"  id="pills-categories-tab" data-bs-toggle="pill"
+                     data-bs-target="#pills-categories" type="button" role="tab" aria-controls="pills-categories" aria-selected="false">
+                        <i class="fa-solid fa-cart-shopping me-2"></i>
                         Categories
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
-                        <i class="fa-solid fa-file me-2"></i>
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link link-dark" id="pills-orders-tab" data-bs-toggle="pill"
+                     data-bs-target="#pills-orders" type="button" role="tab" aria-controls="pills-orders" aria-selected="false">
+                        <i class="fa-solid fa-file me-3"></i>
                         Orders
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
-                        <i class="fa-solid fa-person me-2"></i>
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link link-dark" id="pills-account-tab" data-bs-toggle="pill"
+                     data-bs-target="#pills-account" type="button" role="tab" aria-controls="pills-account" aria-selected="false">
+                        <i class="fa-solid fa-person me-3"></i>
                         Customers Account
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
-                        <i class="fa-solid fa-percent me-2"></i>
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link link-dark" id="pills-discount-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-discount" type="button" role="tab" aria-controls="pills-discount" aria-selected="false">
+                        <i class="fa-solid fa-percent me-3"></i>
                         Discount
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link link-dark" id="pills-images-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-images" type="button" role="tab" aria-controls="pills-images" aria-selected="false">
                         <i class="fa-solid fa-images me-2"></i>
                         Slider images
                     </a>
                 </li>
             </ul>
+            
             <hr>
             <div class="dropdown">
                 <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
@@ -126,16 +78,26 @@
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    <li><a class="dropdown-item" href="../index.html">Sign out</a></li>
                 </ul>
             </div>
         </div>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-course" role="tabpanel" aria-labelledby="pills-course-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nam nihil incidunt consectetur dolorem assumenda quod delectus sit tempora eligendi, id ipsam. Consequatur dicta reiciendis, blanditiis commodi exercitationem dolor sunt.</div>
+            <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div> -->
+          </div>
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
+    <script src="./admin.js"></script>
 </body>
 
 </html>
