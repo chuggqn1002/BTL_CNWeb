@@ -635,3 +635,9 @@ input:focus ~ .fa-magnifying-glass{
 .featured-topic {
     background-color: #F7F9FA;
 }
+
+/* Footer */
+
+footer ul li:hover{
+    text-decoration: underline;
+}
