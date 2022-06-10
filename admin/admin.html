@@ -22,49 +22,55 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto" id="pills-tab" role="tablist" aria-orientation="vertical">
                 <li class="nav-item" role="presentation">
-                    <a href="#" class="nav-link active" id="pills-course-tab" data-bs-toggle="pill" 
-                    data-bs-target="#pills-course" type="button" role="tab" aria-controls="pills-course" aria-selected="true" aria-current="page" >
+                    <a href="#" class="nav-link active" id="pills-course-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-course" type="button" role="tab" aria-controls="pills-course"
+                        aria-selected="true" aria-current="page">
                         <i class="fa-solid fa-book me-3"></i>
                         Course
                     </a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a href="#" class="nav-link link-dark"  id="pills-categories-tab" data-bs-toggle="pill"
-                     data-bs-target="#pills-categories" type="button" role="tab" aria-controls="pills-categories" aria-selected="false">
+                    <a href="#" class="nav-link link-dark" id="pills-categories-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-categories" type="button" role="tab" aria-controls="pills-categories"
+                        aria-selected="false">
                         <i class="fa-solid fa-cart-shopping me-2"></i>
                         Categories
                     </a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a href="#" class="nav-link link-dark" id="pills-orders-tab" data-bs-toggle="pill"
-                     data-bs-target="#pills-orders" type="button" role="tab" aria-controls="pills-orders" aria-selected="false">
+                        data-bs-target="#pills-orders" type="button" role="tab" aria-controls="pills-orders"
+                        aria-selected="false">
                         <i class="fa-solid fa-file me-3"></i>
                         Orders
                     </a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a href="#" class="nav-link link-dark" id="pills-account-tab" data-bs-toggle="pill"
-                     data-bs-target="#pills-account" type="button" role="tab" aria-controls="pills-account" aria-selected="false">
+                        data-bs-target="#pills-account" type="button" role="tab" aria-controls="pills-account"
+                        aria-selected="false">
                         <i class="fa-solid fa-person me-3"></i>
                         Customers Account
                     </a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a href="#" class="nav-link link-dark" id="pills-discount-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-discount" type="button" role="tab" aria-controls="pills-discount" aria-selected="false">
+                        data-bs-target="#pills-discount" type="button" role="tab" aria-controls="pills-discount"
+                        aria-selected="false">
                         <i class="fa-solid fa-percent me-3"></i>
                         Discount
                     </a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a href="#" class="nav-link link-dark" id="pills-images-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-images" type="button" role="tab" aria-controls="pills-images" aria-selected="false">
+                        data-bs-target="#pills-images" type="button" role="tab" aria-controls="pills-images"
+                        aria-selected="false">
                         <i class="fa-solid fa-images me-2"></i>
                         Slider images
                     </a>
                 </li>
             </ul>
-            
+
             <hr>
             <div class="dropdown">
                 <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
@@ -83,13 +89,72 @@
             </div>
         </div>
 
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="pills-course" role="tabpanel" aria-labelledby="pills-course-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nam nihil incidunt consectetur dolorem assumenda quod delectus sit tempora eligendi, id ipsam. Consequatur dicta reiciendis, blanditiis commodi exercitationem dolor sunt.</div>
+        <div class="tab-content container-fluid">
+            <div class="tab-pane fade show active" id="pills-course" role="tabpanel" aria-labelledby="pills-course-tab"
+                tabindex="0">
+                <div class="pane-heading">
+                    <h1 class="text-center">Course Management</h1>
+                </div>
+                <div class="container-fluid px-0">
+                    <div class="row-wrapper">
+                        <div class="row mx-5 my-4">
+                            <div class="col-lg-4 col-6">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Type course name here"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-8 col-6">
+                                <div class="d-flex justify-content-evenly">
+                                    <button type="button" class="btn btn-primary">Add</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Course Code</th>
+                                <th scope="col">Category Code</th>
+                                <th scope="col">Course Title</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Pricing</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Reviews</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td colspan="5">Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td colspan="5">Thornton</td>
+                                <td >@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="6">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
             <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
             <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div> -->
-          </div>
+        </div>
     </main>
 
 

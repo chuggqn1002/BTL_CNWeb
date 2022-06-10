@@ -50,3 +50,19 @@ body {
     vertical-align: -.125em;
     fill: currentColor;
 }
+
+.nav-pills .nav-link.active{
+  background-color: #212529;
+}
+
+.pane-heading h1{
+  font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color 
+  emoji,segoe ui emoji,segoe ui symbol;
+  font-weight: 700;
+}
+
+.container-fluid .row-wrapper{
+  border-top: 1px solid #d1d7dc;
+  border-bottom: 1px solid #d1d7dc;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
