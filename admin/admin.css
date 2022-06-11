@@ -66,3 +66,12 @@ body {
   border-bottom: 1px solid #d1d7dc;
   box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 }
+
+.fa-file:hover{
+  cursor: pointer;
+}
+
+.table-justified{
+  height: 750px;
+  overflow-y: scroll;
+}

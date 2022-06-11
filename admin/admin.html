@@ -71,22 +71,25 @@
                 </li>
             </ul>
 
-            <hr>
-            <div class="dropdown">
-                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
-                    id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                    <strong>User</strong>
-                </a>
-                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="../index.html">Sign out</a></li>
-                </ul>
+            <div class="temp">
+                <hr>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                        id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>User</strong>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../index.html">Sign out</a></li>
+                    </ul>
+                </div>
             </div>
+
         </div>
 
         <div class="tab-content container-fluid">
@@ -109,14 +112,16 @@
                                 <div class="d-flex justify-content-evenly">
                                     <button type="button" class="btn btn-primary">Add</button>
                                     <button type="button" class="btn btn-danger">Delete</button>
-                                    <button type="button" class="btn btn-success">Update</button>
+                                    <button type="button" class="btn btn-success">Update and Save changes</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <table class="table mt-3">
-                        <thead>
+                    <table class="table mt-3 table-bordered">
+                        <thead class="bg-light">
                             <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Change</th>
                                 <th scope="col">STT</th>
                                 <th scope="col">Course Code</th>
                                 <th scope="col">Category Code</th>
@@ -124,36 +129,460 @@
                                 <th scope="col">Image</th>
                                 <th scope="col">Pricing</th>
                                 <th scope="col">Author</th>
-                                <th scope="col">Reviews</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td colspan="5">Otto</td>
-                                <td>@mdo</td>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>1</td>
+                                <td>PYTHON001</td>
+                                <td>DEVELOPMENT</td>
+                                <td>Learn Python: The Complete Python Programming Course</td>
+                                <td><img src="../images/container-content/container-1.jpg" alt="" height="135"
+                                        width="240"></td>
+                                <td>$84.99</td>
+                                <td>Avinash Jain, The Codex</td>
+
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td colspan="5">Thornton</td>
-                                <td >@fat</td>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>2</td>
+                                <td>PYTHON002</td>
+                                <td>DEVELOPMENT</td>
+                                <td>Learn Python: The Complete Python Programming Course</td>
+                                <td><img src="../images/container-content/container-2.jpg" alt="" height="135"
+                                        width="240"></td>
+                                <td>$84.99</td>
+                                <td>Avinash Jain, The Codex</td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td colspan="6">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="3"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>3</td>
+                                <td>PYTHON003</td>
+                                <td>DEVELOPMENT</td>
+                                <td>Learn Python: The Complete Python Programming Course</td>
+                                <td><img src="../images/container-content/container-3.jpg" alt="" height="135"
+                                        width="240"></td>
+                                <td>$84.99</td>
+                                <td>Avinash Jain, The Codex</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
             </div>
-            <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div> -->
+
+            <div class="tab-pane fade" id="pills-categories" role="tabpanel" aria-labelledby="pills-course-tab" tabindex="0">
+                <div class="pane-heading">
+                    <h1 class="text-center">Categories Management</h1>
+                </div>
+                <div class="container-fluid px-0">
+                    <div class="row-wrapper">
+                        <div class="row mx-5 my-4">
+                            <div class="col-lg-4 col-6">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Type category name here"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-8 col-6">
+                                <div class="d-flex justify-content-evenly">
+                                    <button type="button" class="btn btn-primary">Add</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success">Update and Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-justified">
+                        <table class="table mt-3 table-bordered">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Change</th>
+                                    <th scope="col">STT</th>
+                                    <th scope="col">Category Code</th>
+                                    <th scope="col">Sub-Category Code</th>
+                                    <th scope="col">Numbers of Topic</th>
+                                    <th scope="col">Topic</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                            id="flexCheckDefault"></td>
+                                    <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                    <td>1</td>
+                                    <td>DEVELOPMENT</td>
+                                    <td>Web Development</td>
+                                    <td>8</td>
+                                    <td>
+                                        <ul>
+                                            <li> <a>JavaScript</a> </li>
+                                            <li><a>React</a></li>
+                                            <li><a>CSS</a></li>
+                                            <li><a>Angular</a></li>
+                                            <li><a>Node.JS</a></li>
+                                            <li><a>PHP</a></li>
+                                            <li><a>HTML5</a></li>
+                                            <li><a>VueJS</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                            id="flexCheckDefault"></td>
+                                    <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                    <td>2</td>
+                                    <td>BUSINESS</td>
+                                    <td>Sales</td>
+                                    <td>9</td>
+                                    <td>
+                                        <ul>
+                                            <li> <a>Sales Skills</a> </li>
+                                            <li><a>B2B Sales</a></li>
+                                            <li><a>Customer Success Management</a></li>
+                                            <li><a>Lead Generation</a></li>
+                                            <li><a>Customer Service</a></li>
+                                            <li><a>Business Development</a></li>
+                                            <li><a>presentation Skills</a></li>
+                                            <li><a>Cold Email</a></li>
+                                            <li><a>Cold Calling</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox" value="3"
+                                            id="flexCheckDefault"></td>
+                                    <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                    <td>3</td>
+                                    <td>MARKETING</td>
+                                    <td>Branding</td>
+                                    <td>9</td>
+                                    <td>
+                                        <ul>
+                                            <li> <a>Business Branding</a> </li>
+                                            <li><a>Youtube Audience Growth</a></li>
+                                            <li><a>Youtube Marketing</a></li>
+                                            <li><a>Personal Branding</a></li>
+                                            <li><a>Brand Management</a></li>
+                                            <li><a>Marketing Strategy</a></li>
+                                            <li><a>Customer Service</a></li>
+                                            <li><a>Video Creation</a></li>
+                                            <li><a>DaVinci Resolve</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab" tabindex="0">
+                <div class="pane-heading">
+                    <h1 class="text-center">Account Management</h1>
+                </div>
+                <div class="container-fluid px-0">
+                    <div class="row-wrapper">
+                        <div class="row mx-5 my-4">
+                            <div class="col-lg-4 col-6">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Type category name here"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-8 col-6">
+                                <div class="d-flex justify-content-evenly">
+                                    <button type="button" class="btn btn-primary">Add</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success">Update and Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table mt-3 table-bordered">
+                        <thead class="bg-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Change</th>
+                                <th scope="col">STT</th>
+                                <th scope="col">Account Email</th>
+                                <th scope="col">Account Password</th>
+                                <th scope="col">User Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>1</td>
+                                <td>tlu1@gmail.com</td>
+                                <td>123456as</td>
+                                <td>TLU</td>
+                            </tr>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>2</td>
+                                <td>quangchung@gmail.com</td>
+                                <td>web@2022</td>
+                                <td>Chung</td>
+                            </tr>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="3"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>3</td>
+                                <td>nhadau@gmail.com</td>
+                                <td>123456789</td>
+                                <td>Guesttt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             </div>
+
+            <div class="tab-pane fade" id="pills-orders" role="tabpanel" aria-labelledby="pills-orders-tab" tabindex="0">
+                <div class="pane-heading">
+                    <h1 class="text-center">Orders Management</h1>
+                </div>
+                <div class="container-fluid px-0">
+                    <div class="row-wrapper">
+                        <div class="row mx-5 my-4">
+                            <div class="col-lg-4 col-6">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Type category name here"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-8 col-6">
+                                <div class="d-flex justify-content-evenly">
+                                    <button type="button" class="btn btn-primary">Add</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success">Update and Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table mt-3 table-bordered">
+                        <thead class="bg-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Change</th>
+                                <th scope="col">STT</th>
+                                <th scope="col">Account Email</th>
+                                <th scope="col">Numbers of Course order</th>
+                                <th scope="col">Course Code Include</th>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">Payment method</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>1</td>
+                                <td>tlu1@gmail.com</td>
+                                <td>1</td>
+                                <td>
+                                    <ul>
+                                        <li> <a>PYTHON001</a> </li>
+                                    </ul>
+                                </td>
+                                <td>$9.99</td>
+                                <td>PayPal</td>
+                            </tr>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>2</td>
+                                <td>quangchung@gmail.com</td>
+                                <td>2</td>
+                                <td>
+                                    <ul>
+                                        <li> <a>PYTHON001</a> </li>
+                                        <li> <a>PYTHON002</a> </li>
+                                    </ul>
+                                </td>
+                                <td>$9.99</td>
+                                <td>PayPal</td>
+                            </tr>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="3"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>3</td>
+                                <td>nhadau@gmail.com</td>
+                                <td>3</td>
+                                <td>
+                                    <ul>
+                                        <li> <a>PYTHON001</a> </li>
+                                        <li> <a>PYTHON002</a> </li>
+                                        <li> <a>PYTHON003</a> </li>
+                                    </ul>
+                                </td>
+                                <td>$9.99</td>
+                                <td>PayPal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-discount" role="tabpanel" aria-labelledby="pills-discount-tab" tabindex="0">
+                <div class="pane-heading">
+                    <h1 class="text-center">Discount Management</h1>
+                </div>
+                <div class="container-fluid px-0">
+                    <div class="row-wrapper">
+                        <div class="row mx-5 my-4">
+                            <div class="col-lg-4 col-6">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Type category name here"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-8 col-6">
+                                <div class="d-flex justify-content-evenly">
+                                    <button type="button" class="btn btn-primary">Add</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success">Update and Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table mt-3 table-bordered">
+                        <thead class="bg-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Change</th>
+                                <th scope="col">STT</th>
+                                <th scope="col">Course Code</th>
+                                <th scope="col">Original Price</th>
+                                <th scope="col">Discount percent</th>
+                                <th scope="col">Final Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>1</td>
+                                <td>PYTHON001</td>
+                                <td>$84.99</td>
+                                <td>
+                                    88.25%
+                                </td>
+                                <td>$9.99</td>
+                            </tr>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>2</td>
+                                <td>PYTHON002</td>
+                                <td>$84.99</td>
+                                <td>
+                                    88.25%
+                                </td>
+                                <td>$9.99</td>
+                            </tr>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="3"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>3</td>
+                                <td>PYTHON003</td>
+                                <td>$84.99</td>
+                                <td>
+                                    88.25%
+                                </td>
+                                <td>$9.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-images" role="tabpanel" aria-labelledby="pills-images-tab" tabindex="0">
+                <div class="pane-heading">
+                    <h1 class="text-center">Slide images Management</h1>
+                </div>
+                <div class="container-fluid px-0">
+                    <div class="row-wrapper">
+                        <div class="row mx-5 my-4">
+                            <div class="col-lg-4 col-6">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Type category name here"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-8 col-6">
+                                <div class="d-flex justify-content-evenly">
+                                    <button type="button" class="btn btn-primary">Add</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success">Update and Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-justified">
+                    <table class="table mt-3 table-bordered">
+                        <thead class="bg-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Change</th>
+                                <th scope="col">STT</th>
+                                <th scope="col">Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>1</td>
+                                <td>
+                                    <img src="../images/slider1.jpg" alt="" width="1340" height="400">
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                        id="flexCheckDefault"></td>
+                                <td ><i class="fa-regular fa-file fs-3"></i></td>
+                                <td>2</td>
+                                <td>
+                                    <img src="../images/slider2.jpg" alt="" width="1340" height="400">
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    
+                </div>
+            </div>
+
         </div>
     </main>
 
