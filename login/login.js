@@ -31,9 +31,14 @@ form.onsubmit = function(e) {
         }
         window.location.href = '../account/account.html';
     }
+    else{
+        login_failed.style.display='block';
+    }
 }
 // submit.onclick = function() {
 //     location.href = 'https://google.com/';
 //     console.log('đ');
 // }
-console.log([1,2,3].map((item)=>{ if(item == 2) return item}))
+// console.log([1,2,3].map((item)=>{ if(item == 2) return item}))
+var login_failed = document.getElementById('login-failed');
+login_failed.style.display='none';
