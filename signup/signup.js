@@ -162,6 +162,7 @@ form_signUp.onsubmit = (e) => {
     }) && input_email.value != 'admin@gmail.com') {
     users.push(user);
     alert('Creat account successfully')
+    window.location.href = '../login/login.html';
     }
     else alert('Account already exists');
     localStorage.setItem('users', JSON.stringify(users))
@@ -172,5 +173,11 @@ form_signUp.onsubmit = (e) => {
     input_fullname.value = '';
     input_password.value = '';
     input_email.value = '';
+    // label_fullname.classList.remove('moved-label');
+    // label_fullname.classList.add('default-label');
+    // label_email.classList.remove('moved-label');
+    // label_email.classList.add('default-label');
+    // label_password.classList.remove('moved-label');
+    // label_password.classList.add('default-label');
 }
 //console.log(localStorage.length)
