@@ -732,3 +732,7 @@ footer ul li:hover{
     background-color: transparent;
     border: 1px solid #1c1d1f;
 }
+
+img:hover{
+    cursor: pointer;
+}

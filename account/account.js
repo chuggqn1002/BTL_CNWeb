@@ -1,19 +1,25 @@
 const user_infor = JSON.parse(localStorage.getItem('log in'));
 const user_names = document.querySelectorAll('.user-name');
 const user_emails = document.querySelectorAll('.user-email');
+// hien ten tai khoan
 user_names.forEach((user_name) => {
 user_name.textContent = user_infor.Name;
 })
 user_emails.forEach((user_email) => {
     user_email.textContent = user_infor.Email;
 })
-
+//dang xuat
 const log_out = document.getElementById('log-out');
 log_out.onclick = () => localStorage.removeItem('log in')
 
 var addCourses = document.querySelectorAll('.course');
-
-
+//tat quang cao
+var adv = document.getElementById('advertisement');
+var adv_btn = document.getElementById('dismis-ad');
+adv_btn.onclick = () => {
+    adv.style.display = 'none';
+}
+//them vao gio hang
 
 let courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
 var cart = document.getElementById('cart');
