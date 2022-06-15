@@ -494,7 +494,7 @@
       <div class="container px-0 m-0" style="display: inline;">
         <div class="row d-flex justify-content-center">
           <!-- first-container -->
-          <div class="col">
+          <div class="col" data-toggle="popover" data-trigger="focus" data-popover-content="#rush-01">
             <div class="img-wrapper">
               <img src="../images/container-content/4/container-1.jpg" height="135" width="240" alt="">
             </div>
@@ -709,6 +709,80 @@
         </div>
       </div>
     </div>
+
+    <!-- data-popover-for-banner-1 -->
+
+    <div id="rush-01" class="d-none">
+
+      <div class="popover-body">
+        <div class="popover-inner">
+          <div class="course-details-content">
+            <div>
+              <a class="title" href="">Ultimate Rust 2: Intermediate Concepts</a>
+              <div class="course-badge-container mt-3 d-flex align-items-baseline">
+                <span class="popover-text-xs" style="color: #1e6055 !important;">
+                  Update
+                  <span class="popover-heading-xs">
+                    June 2022
+                  </span>
+                </span>
+              </div>
+              <div class="course-box-stat mt-3 popover-text-xs" style="color: #6a6f73 !important;">
+                <span>
+                  Intermediate Level
+                </span>
+                <span>
+                  Subtitles
+                </span>
+              </div>
+              <div class="course-headline popover-text-xs mt-3" style="font-size: 1.4rem;">
+                Rust for the daily practitioner
+              </div>
+              <div class="course-objective popover-text-xs mt-3 bt-4" style="font-size: 1.4rem;">
+                <ul class="unstyle-list">
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">How to write idiomatic, well-tested, documented Rust code</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Threads, channels, closures, iterators, code documentation, std library traits, error handling, testing, benchmarks, logging, attributes, turbofish and more!</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Rust concepts beyond the fundamentals taught in the "Ultimate Rust Crash Course"</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="course-button mt-3 d-flex justify-content-between">
+                <div class="add-cart">
+                  <div data-purpose="add-to-cart">
+                    <button class="btn-style popover-heading-xs fs-3">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div>
+                    <button class="wish-btn">
+                      <span style="font-weight: 100;">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- banner-2 -->
     <div class="banner-component-2 mx-auto banner-container">
@@ -2128,7 +2202,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+    
   <script src="./account.js"></script>
+  
+  <script src="../main.js"></script>
 </body>
 
 </html>
