@@ -64,3 +64,12 @@ addCourses.forEach((addCourse,i) => {
 
 // cart.append(course.innerHTML);
 // cart.append(course);
+
+//xem khoa hoc
+var course_infos = document.querySelectorAll('.courses');
+course_infos.forEach((course_info) => {
+    course_info.onclick = (e) => {
+         e.preventDefault();
+        window.location.href = '../course/course.html';
+    }
+}) 
