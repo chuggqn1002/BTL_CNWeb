@@ -356,6 +356,10 @@ input:focus ~ .fa-magnifying-glass{
     display: none;
 }
 
+.responsive-tabs .tab-content .card{
+    background-color: #fff !important;
+}
+
 @media (min-width: 768px){
     .responsive-tabs .heading-tab {
         display: flex;
@@ -744,4 +748,32 @@ img:hover{
 
 .swiper-button-disabled{
     display: none !important;
+}
+
+.swiper-navBtn{
+    
+    border-radius: 50%;
+    top: 60% !important;
+    background-color: #000;
+    width: 48px !important;
+    height: 48px !important; 
+}
+
+.swiper-button-next{
+    right: -12px !important;
+}
+
+.swiper-button-prev{
+    left: -12px !important;
+}
+
+.swiper-navBtn::after{
+    color: #fff;
+    font-size: 1.6rem!important;
+}
+
+@media screen and (max-width: 400px){
+    .swiper-navBtn{
+        top: 75% !important;
+    }
 }
