@@ -12,7 +12,6 @@ user_emails.forEach((user_email) => {
 const log_out = document.getElementById('log-out');
 log_out.onclick = () => localStorage.removeItem('log in')
 
-var addCourses = document.querySelectorAll('.course');
 //tat quang cao
 var adv = document.getElementById('advertisement');
 var adv_btn = document.getElementById('dismis-ad');
@@ -20,7 +19,9 @@ adv_btn.onclick = () => {
     adv.style.display = 'none';
 }
 //them vao gio hang
-
+// var btnAdd = document.getElementById('btn-add');
+// console.log(btnAdd.getAttributeNS('data-purpose','sd'))
+var addCourses = document.querySelectorAll('.course');
 let courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
 var cart = document.getElementById('cart');
 console.log(user_emails)
