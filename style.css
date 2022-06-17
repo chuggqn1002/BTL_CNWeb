@@ -740,3 +740,8 @@ img:hover{
 
 /* demo */
 
+/* slide button */
+
+.swiper-button-disabled{
+    display: none !important;
+}
