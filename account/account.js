@@ -196,7 +196,8 @@ var add = function (id) {
 }
 
 courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
-if (courses.length != 0 || courses.some((course) => {
+console.log(user_emails[0].textContent == courses[0].email)
+if (courses.length != 0 && courses.some((course) => {
     return (user_emails[0].textContent == course.email)
 })) {
     cart.innerHTML = '';

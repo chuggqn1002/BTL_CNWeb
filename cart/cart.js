@@ -1,8 +1,22 @@
+const user_infor = JSON.parse(localStorage.getItem('log in'));
+const user_names = document.querySelectorAll('.user-name');
+const user_emails = document.querySelectorAll('.user-email');
+// hien ten tai khoan
+user_names.forEach((user_name) => {
+    user_name.textContent = user_infor.Name;
+})
+user_emails.forEach((user_email) => {
+    user_email.textContent = user_infor.Email;
+})
+//dang xuat
+const log_out = document.getElementById('log-out');
+log_out.onclick = () => localStorage.removeItem('log in')
+
 var cart = document.getElementById('cart');
 var cart_container  =document.getElementById('cart-container');
 var total = 0;
 courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
-if (courses.length != 0 || courses.some((course) => {
+if (courses.length != 0 && courses.some((course) => {
     return (user_emails[0].textContent == course.email)
 })) {
     cart.innerHTML = '';
@@ -156,7 +170,7 @@ if (courses.length != 0 || courses.some((course) => {
     cart.append(goToCartBtn);
 }
 
-
+//xoa khoa hoc khoi gio hang
 var removeCourseBtns = document.querySelectorAll('.removeCourse');
 removeCourseBtns.forEach((removeCourseBtn) => {
         removeCourseBtn.onclick = (e) => {
