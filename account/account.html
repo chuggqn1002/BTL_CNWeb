@@ -394,7 +394,7 @@
             <li class="nav-item d-flex align-items-center">
               <div class="dropdown">
                 <a style="color: black;" href="../cart/cart.html"><i class="bridge-bot fa-solid fa-cart-shopping"></i></a>
-                <div id="cart" class="p-4 text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
+                <div style="max-height: 40rem; overflow-y: scroll;" id="cart" class="p-4 text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
                   aria-labelledby="dropdownMenuButton1">
                   <p class="m-3 text-black-50">
                     Your cart is empty.
@@ -527,7 +527,7 @@
 
             <div class="course-card-pricing d-flex align-items-center">
               <div class="price-text">
-                <span style="font-weight: 700;">$16.99</span>
+                <span style="font-weight: 700;">$26.99</span>
               </div>
 
               <div class="discount-pricing font-content">
@@ -537,7 +537,7 @@
 
           </div>
           <!-- second-container -->
-          <div class="courses col">
+          <div class="courses col" data-toggle="popover" data-trigger="focus" data-popover-content="#rush-02">
             <div class="img-wrapper">
               <img src="../images/container-content/4/container-2.jpg" height="135" width="240" alt="">
             </div>
@@ -569,7 +569,7 @@
 
             <div class="course-card-pricing d-flex align-items-center">
               <div class="price-text">
-                <span style="font-weight: 700;">$16.99</span>
+                <span style="font-weight: 700;">$36.99</span>
               </div>
 
               <div class="discount-pricing font-content">
@@ -579,7 +579,7 @@
 
           </div>
           <!-- third-container -->
-          <div class="courses col">
+          <div class="courses col" data-toggle="popover" data-trigger="focus" data-popover-content="#rush-03">
             <div class="img-wrapper">
               <img src="../images/container-content/4/container-3.jpg" height="135" width="240" alt="">
             </div>
@@ -611,7 +611,7 @@
 
             <div class="course-card-pricing d-flex align-items-center">
               <div class="price-text">
-                <span style="font-weight: 700;">$16.99</span>
+                <span style="font-weight: 700;">$18.99</span>
               </div>
 
               <div class="discount-pricing font-content">
@@ -621,7 +621,7 @@
 
           </div>
           <!-- fourth-container -->
-          <div class="courses col">
+          <div class="courses col" data-toggle="popover" data-trigger="focus" data-popover-content="#rush-04">
             <div class="img-wrapper">
               <img src="../images/container-content/4/container-4.jpg" height="135" width="240" alt="">
             </div>
@@ -653,7 +653,7 @@
 
             <div class="course-card-pricing d-flex align-items-center">
               <div class="price-text">
-                <span style="font-weight: 700;">$16.99</span>
+                <span style="font-weight: 700;">$20.99</span>
               </div>
 
               <div class="discount-pricing font-content">
@@ -663,7 +663,7 @@
 
           </div>
           <!-- fifth-container -->
-          <div class="courses col">
+          <div class="courses col" data-toggle="popover" data-trigger="focus" data-popover-content="#rush-05">
             <div class="img-wrapper">
               <img src="../images/container-content/4/container-5.jpg" height="135" width="240" alt="">
             </div>
@@ -695,7 +695,7 @@
 
             <div class="course-card-pricing d-flex align-items-center">
               <div class="price-text">
-                <span style="font-weight: 700;">$16.99</span>
+                <span style="font-weight: 700;">$6.99</span>
               </div>
 
               <div class="discount-pricing font-content">
@@ -711,7 +711,7 @@
     </div>
 
     <!-- data-popover-for-banner-1 -->
-
+    <!-- 1 -->
     <div id="rush-01" class="d-none">
 
       <div class="popover-body">
@@ -763,7 +763,7 @@
               <div class="course-button mt-3 d-flex justify-content-between">
                 <div class="add-cart">
                   <div data-purpose="add-to-cart">
-                    <button class="btn-style popover-heading-xs fs-3">Add to Cart</button>
+                    <button onclick="add(id)" id="course1" class="add-to-cart btn-style popover-heading-xs fs-3">Add to Cart</button>
                   </div>
                 </div>
                 <div class="ms-3">
@@ -782,6 +782,291 @@
         </div>
       </div>
     </div>
+    <!-- 2 -->
+    <div id="rush-02" class="d-none">
+
+      <div class="popover-body">
+        <div class="popover-inner">
+          <div class="course-details-content">
+            <div>
+              <a class="title" href="">Ultimate Rust Crash Course</a>
+              <div class="course-badge-container mt-3 d-flex align-items-baseline">
+                <span class="popover-text-xs" style="color: #1e6055 !important;">
+                  Update
+                  <span class="popover-heading-xs">
+                    June 2022
+                  </span>
+                </span>
+              </div>
+              <div class="course-box-stat mt-3 popover-text-xs" style="color: #6a6f73 !important;">
+                <span>
+                  Intermediate Level
+                </span>
+                <span>
+                  Subtitles
+                </span>
+              </div>
+              <div class="course-headline popover-text-xs mt-3" style="font-size: 1.4rem;">
+                Rust for the daily practitioner
+              </div>
+              <div class="course-objective popover-text-xs mt-3 bt-4" style="font-size: 1.4rem;">
+                <ul class="unstyle-list">
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">How to write idiomatic, well-tested, documented Rust code</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Threads, channels, closures, iterators, code documentation, std library traits, error handling, testing, benchmarks, logging, attributes, turbofish and more!</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Rust concepts beyond the fundamentals taught in the "Ultimate Rust Crash Course"</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="course-button mt-3 d-flex justify-content-between">
+                <div class="add-cart">
+                  <div data-purpose="add-to-cart">
+                    <button onclick="add(id)" id="course2" class="add-to-cart btn-style popover-heading-xs fs-3">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div>
+                    <button class="wish-btn">
+                      <span style="font-weight: 100;">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div id="rush-03" class="d-none">
+
+      <div class="popover-body">
+        <div class="popover-inner">
+          <div class="course-details-content">
+            <div>
+              <a class="title" href="">Learn Rust by Building Real Applications</a>
+              <div class="course-badge-container mt-3 d-flex align-items-baseline">
+                <span class="popover-text-xs" style="color: #1e6055 !important;">
+                  Update
+                  <span class="popover-heading-xs">
+                    June 2022
+                  </span>
+                </span>
+              </div>
+              <div class="course-box-stat mt-3 popover-text-xs" style="color: #6a6f73 !important;">
+                <span>
+                  Intermediate Level
+                </span>
+                <span>
+                  Subtitles
+                </span>
+              </div>
+              <div class="course-headline popover-text-xs mt-3" style="font-size: 1.4rem;">
+                Rust for the daily practitioner
+              </div>
+              <div class="course-objective popover-text-xs mt-3 bt-4" style="font-size: 1.4rem;">
+                <ul class="unstyle-list">
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">How to write idiomatic, well-tested, documented Rust code</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Threads, channels, closures, iterators, code documentation, std library traits, error handling, testing, benchmarks, logging, attributes, turbofish and more!</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Rust concepts beyond the fundamentals taught in the "Ultimate Rust Crash Course"</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="course-button mt-3 d-flex justify-content-between">
+                <div class="add-cart">
+                  <div data-purpose="add-to-cart">
+                    <button onclick="add(id)" id="course3" class="add-to-cart btn-style popover-heading-xs fs-3">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div>
+                    <button class="wish-btn">
+                      <span style="font-weight: 100;">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div id="rush-04" class="d-none">
+
+      <div class="popover-body">
+        <div class="popover-inner">
+          <div class="course-details-content">
+            <div>
+              <a class="title" href="">Learn Python: The Complete Python Programming Course</a>
+              <div class="course-badge-container mt-3 d-flex align-items-baseline">
+                <span class="popover-text-xs" style="color: #1e6055 !important;">
+                  Update
+                  <span class="popover-heading-xs">
+                    June 2022
+                  </span>
+                </span>
+              </div>
+              <div class="course-box-stat mt-3 popover-text-xs" style="color: #6a6f73 !important;">
+                <span>
+                  Intermediate Level
+                </span>
+                <span>
+                  Subtitles
+                </span>
+              </div>
+              <div class="course-headline popover-text-xs mt-3" style="font-size: 1.4rem;">
+                Rust for the daily practitioner
+              </div>
+              <div class="course-objective popover-text-xs mt-3 bt-4" style="font-size: 1.4rem;">
+                <ul class="unstyle-list">
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">How to write idiomatic, well-tested, documented Rust code</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Threads, channels, closures, iterators, code documentation, std library traits, error handling, testing, benchmarks, logging, attributes, turbofish and more!</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Rust concepts beyond the fundamentals taught in the "Ultimate Rust Crash Course"</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="course-button mt-3 d-flex justify-content-between">
+                <div class="add-cart">
+                  <div data-purpose="add-to-cart">
+                    <button onclick="add(id)" id="course4" class="add-to-cart btn-style popover-heading-xs fs-3">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div>
+                    <button class="wish-btn">
+                      <span style="font-weight: 100;">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div id="rush-05" class="d-none">
+
+      <div class="popover-body">
+        <div class="popover-inner">
+          <div class="course-details-content">
+            <div>
+              <a class="title" href="">Learn Python: The Complete Python Programming Course</a>
+              <div class="course-badge-container mt-3 d-flex align-items-baseline">
+                <span class="popover-text-xs" style="color: #1e6055 !important;">
+                  Update
+                  <span class="popover-heading-xs">
+                    June 2022
+                  </span>
+                </span>
+              </div>
+              <div class="course-box-stat mt-3 popover-text-xs" style="color: #6a6f73 !important;">
+                <span>
+                  Intermediate Level
+                </span>
+                <span>
+                  Subtitles
+                </span>
+              </div>
+              <div class="course-headline popover-text-xs mt-3" style="font-size: 1.4rem;">
+                Rust for the daily practitioner
+              </div>
+              <div class="course-objective popover-text-xs mt-3 bt-4" style="font-size: 1.4rem;">
+                <ul class="unstyle-list">
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">How to write idiomatic, well-tested, documented Rust code</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Threads, channels, closures, iterators, code documentation, std library traits, error handling, testing, benchmarks, logging, attributes, turbofish and more!</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <div class="ms-4">Rust concepts beyond the fundamentals taught in the "Ultimate Rust Crash Course"</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="course-button mt-3 d-flex justify-content-between">
+                <div class="add-cart">
+                  <div data-purpose="add-to-cart">
+                    <button onclick="add(id)" id="course5" class="add-to-cart btn-style popover-heading-xs fs-3">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div>
+                    <button class="wish-btn">
+                      <span style="font-weight: 100;">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     <!-- banner-2 -->
