@@ -202,7 +202,8 @@ if (courses.length != 0 && courses.some((course) => {
 })) {
     cart.innerHTML = '';
     courses.forEach((course, i) => {
-            cart.innerHTML += `
+      if(user_emails[0].textContent == course.email) {
+        cart.innerHTML += `
                 <div class="courses col">
             <div class="img-wrapper">
               <img src="`+ course.img + `" height="135" width="240" alt="">
@@ -250,6 +251,8 @@ if (courses.length != 0 && courses.some((course) => {
       </div>
     </div>
     `;
+      }
+            
 
     })
     var goToCartBtn = document.createElement('div');

@@ -15,15 +15,19 @@ log_out.onclick = () => localStorage.removeItem('log in')
 var cart = document.getElementById('cart');
 var cart_container  =document.getElementById('cart-container');
 var total = 0;
+var index = 0;
 courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
 if (courses.length != 0 && courses.some((course) => {
     return (user_emails[0].textContent == course.email)
 })) {
     cart.innerHTML = '';
-    courses.forEach((course, i) => {
+    let i =0;
+    courses.forEach((course) => {
+      if(user_emails[0].textContent == course.email){
+        i++;
         total+=parseFloat(course.price.replace('$',''));
             cart.innerHTML += `
-                <div class="courses col">
+                <div class="course`+i+` courses col">
             <div class="img-wrapper">
               <img src="`+ course.img + `" height="135" width="240" alt="">
             </div>
@@ -70,12 +74,13 @@ if (courses.length != 0 && courses.some((course) => {
       </div>
     </div>
     `;
-    if(i==0) {
+    if(index==0) {
+        index++;
         cart_container.innerHTML = '';
         cart_container.innerHTML += `
         <div class="col-8">
-        <h3 class="fw-normal">0 Courses in Cart</h3>
-        <div class="d-flex gap-4 justify-content-between border p-3">
+        <h3 class="fw-normal"><span id="course-index"></span> Courses in Cart</h3>
+        <div class="course`+ index +` d-flex gap-4 justify-content-between border p-3">
           <div>
             <img class="w-100" src="`+ course.img +`" alt="">
           </div>
@@ -100,13 +105,13 @@ if (courses.length != 0 && courses.some((course) => {
               </span>
             </div>
             <p>
-              22 total hours cefewfewewew
+              22 total hours
             </p>
           </div>
-          <div class="removeCourse">
-            <a style="color: #a435f0;" href="">Remove</a>
+          <div>
+            <a class="removeCourse" style="color: #a435f0;" href="">Remove</a>
           </div>
-          <div class="fw-bolder">
+          <div class="course-price fw-bolder">
             `+ course.price +`
           </div>
         </div>
@@ -124,8 +129,9 @@ if (courses.length != 0 && courses.some((course) => {
         `;
     }
     else{
+      index++;
        //s console.log(cart_container.firstElementChild)
-        cart_container.firstElementChild.innerHTML += `        <div class="d-flex gap-4 justify-content-between border p-3">
+        cart_container.firstElementChild.innerHTML += `        <div class="course`+ index +` d-flex gap-4 justify-content-between border p-3">
           <div>
             <img class="w-100" src="`+ course.img +`" alt="">
           </div>
@@ -150,24 +156,28 @@ if (courses.length != 0 && courses.some((course) => {
               </span>
             </div>
             <p>
-              22 total hours cefewfewewew
+              22 total hours
             </p>
           </div>
-          <div class="removeCourse">
-            <a style="color: #a435f0;" href="">Remove</a>
+          <div >
+            <a class="removeCourse" style="color: #a435f0;" href="">Remove</a>
           </div>
-          <div class="fw-bolder">
+          <div class="course-price fw-bolder">
             `+ course.price +`
           </div>
         </div>
 
         `;
     }
+      }
+        
     })
     var goToCartBtn = document.createElement('div');
     goToCartBtn.innerHTML = `<a  href="../cart/cart.html" > <button class="w-100 bg-dark text-white fs-3">Go to Cart</button></a>`;
     goToCartBtn.id = 'goToCartBtn';
     cart.append(goToCartBtn);
+    var courses_index = document.getElementById('course-index');
+    courses_index.textContent = index;
 }
 
 //xoa khoa hoc khoi gio hang
@@ -175,13 +185,42 @@ var removeCourseBtns = document.querySelectorAll('.removeCourse');
 removeCourseBtns.forEach((removeCourseBtn) => {
         removeCourseBtn.onclick = (e) => {
             e.preventDefault();
-            removeCourseBtn.parentElement.remove();
+            //console.log(removeCourseBtn.parentElement.parentElement.classList[0])
+            let deleteCourses = document.getElementsByClassName(removeCourseBtn.parentElement.parentElement.classList[0])
+            deleteCourses[0].remove();
+            deleteCourses[0].remove();
+            let course_price = removeCourseBtn.parentElement.parentElement.querySelector('.course-price');
+            index--;
+            courses_index.textContent = index;
+            if(index == 0) {
+              cart.innerHTML = `
+              <p class="m-3 text-black-50">
+              Your cart is empty.
+            </p>
+            <a class="text-decoration-none" href="#">Keep shopping</a>
+              `;
+
+              cart_container.innerHTML = `
+              <h3 class="fw-normal">0 Courses in Cart</h3>
+              <div class="w-100 border d-flex flex-column align-items-center p-4">
+                  <img class="w-25" src="../images/Cart/empty-shopping-cart-v2.jpg" alt="">
+                  <p>Your cart is empty. Keep shopping to find a course!</p>
+                  <a href="../account/account.html">
+                      <button style="background-color: #a435f0 !important;" class="text-white fw-semibold bg-warning border-0 p-3">Keep shopping</button>
+                  </a>
+              </div>
+              `;
+            }
+            total -= parseFloat(course_price.textContent.replace('$',''));
+            //console.log(course_price.textContent)
+            totalPrice.textContent = '$' + Math.round(total * 100)/100;
     }
 }
 ) 
+console.log(courses)
 
 console.log(total)
 //gan tong tien
 
 var totalPrice = document.getElementById('total');
-totalPrice.textContent = total;
+totalPrice.textContent = '$' + Math.round(total * 100)/100;

@@ -31,6 +31,11 @@ form.onsubmit = function(e) {
         }
         window.location.href = '../account/account.html';
     }
+    else if (email.value === 'admin@gmail.com' && password.value === 'admin2022') {
+        {
+            login_failed.style.display='none';
+        }
+    }
     else{
         login_failed.style.display='block';
     }
