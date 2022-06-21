@@ -119,7 +119,7 @@ if (courses.length != 0 && courses.some((course) => {
       <div class="col-md-4">
         <h3 class="fw-normal">Total:</h3>
         <h1 id="total">$169.98</h1>
-        <button style="background-color: #a435f0;" class="w-100 p-4 text-white border-0">Check out</button>
+        <button id="checkout" style="background-color: #a435f0;" class="w-100 p-4 text-white border-0">Check out</button>
         <div class="mt-3">Promotions</div>
         <form action="" class="mt-3">
           <input style="margin-right: -0.5rem;" class="p-2 w-75" type="text" placeholder="Enter coupon" name="" id="">
@@ -217,10 +217,44 @@ removeCourseBtns.forEach((removeCourseBtn) => {
     }
 }
 ) 
-console.log(courses)
+// console.log(courses)
 
-console.log(total)
+// console.log(total)
 //gan tong tien
 
 var totalPrice = document.getElementById('total');
 totalPrice.textContent = '$' + Math.round(total * 100)/100;
+
+//thanh toan
+var checkOut = document.getElementById('checkout');
+checkOut.onclick = function() {
+  alert('successful purchase');
+  const purchasedCourses = [];
+  for(let i = 1; i<= index ; i++) {
+
+    let courses = document.getElementsByClassName('course'+i)
+    purchasedCourses.push('<div class="d-flex gap-4 justify-content-between border p-3 flex-column flex-md-row">' + courses[0].innerHTML + '</div>');
+    courses[0].remove();
+    courses[0].remove();
+  }
+  console.log(purchasedCourses)
+  localStorage.setItem(user_emails[0].textContent,JSON.stringify(purchasedCourses))
+  cart.innerHTML = `
+              <p class="m-3 text-black-50">
+              Your cart is empty.
+            </p>
+            <a class="text-decoration-none" href="#">Keep shopping</a>
+              `;
+
+              cart_container.innerHTML = `
+              <h3 class="fw-normal">0 Courses in Cart</h3>
+              <div class="w-100 border d-flex flex-column align-items-center p-4">
+                  <img class="w-25" src="../images/Cart/empty-shopping-cart-v2.jpg" alt="">
+                  <p>Your cart is empty. Keep shopping to find a course!</p>
+                  <a href="../account/account.html">
+                      <button style="background-color: #a435f0 !important;" class="text-white fw-semibold bg-warning border-0 p-3">Keep shopping</button>
+                  </a>
+              </div>
+              `;
+  
+}
