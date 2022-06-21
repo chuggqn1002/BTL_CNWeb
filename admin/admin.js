@@ -63,7 +63,8 @@ function add() {
         Name: course_name,
         Content: content,
         Author: author,
-        Price: price
+        Price: price,
+        Img: upload_image
     }
 
     data.push(item)
@@ -144,8 +145,8 @@ function render() {
         <td>${data[i].courseId}</td>
         <td>${data[i].categoryId}</td>
         <td>${data[i].Name}</td>
-        <td>${data[i].Content} sections <br> ( <a href="">Show details</a> )</td>
-        <td><img src="${upload_image}" alt="" height="135"
+        <td>${data[i].Content} sections <br> ( <a href="./content/content.html">Show details</a> )</td>
+        <td><img src="${data[i].Img}" alt="" height="135"
                 width="240"></td>
         <td>${data[i].Price}</td>
         <td>${data[i].Author}</td>
