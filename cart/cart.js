@@ -223,21 +223,21 @@ removeCourseBtns.forEach((removeCourseBtn) => {
 //gan tong tien
 
 var totalPrice = document.getElementById('total');
+if(totalPrice)
 totalPrice.textContent = '$' + Math.round(total * 100)/100;
 
 //thanh toan
 var checkOut = document.getElementById('checkout');
+if(checkOut)
 checkOut.onclick = function() {
   alert('successful purchase');
-  const purchasedCourses = [];
+  let purchasedCourses = JSON.parse(localStorage.getItem(user_emails[0].textContent)) ?  JSON.parse(localStorage.getItem(user_emails[0].textContent)) : [];
   for(let i = 1; i<= index ; i++) {
-
     let courses = document.getElementsByClassName('course'+i)
     purchasedCourses.push('<div class="d-flex gap-4 justify-content-between border p-3 flex-column flex-md-row">' + courses[0].innerHTML + '</div>');
     courses[0].remove();
     courses[0].remove();
   }
-  console.log(purchasedCourses)
   localStorage.setItem(user_emails[0].textContent,JSON.stringify(purchasedCourses))
   cart.innerHTML = `
               <p class="m-3 text-black-50">
@@ -256,5 +256,17 @@ checkOut.onclick = function() {
                   </a>
               </div>
               `;
-  
+  for(let i = 0; i< courses.length; i++) {
+    //console.log(user_emails[0].textContent,courses[i].email)
+    if(user_emails[0].textContent == courses[i].email) {
+      courses.splice(i,1);
+      //console.log(i)
+      i--;
+    }
+  }
+  localStorage.setItem('courses',JSON.stringify(courses));
 }
+
+
+var a= new Date()
+console.log(a.toLocaleTimeString(), a.toLocaleDateString());

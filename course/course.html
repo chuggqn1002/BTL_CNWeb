@@ -493,23 +493,7 @@
                                     <li class="dropdown-item px-5 py-4 border-bottom"><a class="text-decoration-none"
                                             style="color: black;" href="">Teach on Udemy</a></li>
                                     <li class="dropdown-item px-5 py-4"><a class="text-decoration-none"
-                                            style="color: black;" href="">Notifications</a></li>
-                                    <li class="dropdown-item px-5 py-4 border-bottom"><a class="text-decoration-none"
-                                            style="color: black;" href="">Messages</a></li>
-                                    <li class="dropdown-item px-5 py-4"><a class="text-decoration-none"
-                                            style="color: black;" href="">Account settings</a></li>
-                                    <li class="dropdown-item px-5 py-4"><a class="text-decoration-none"
-                                            style="color: black;" href="">Payment methods</a></li>
-                                    <li class="dropdown-item px-5 py-4"><a class="text-decoration-none"
-                                            style="color: black;" href="">Udemy credits</a></li>
-                                    <li class="dropdown-item px-5 py-4 border-bottom"><a class="text-decoration-none"
-                                            style="color: black;" href="">Purchase history</a></li>
-                                    <li class="dropdown-item px-5 py-4"><a class="text-decoration-none"
-                                            style="color: black;" href="">Public profile</a></li>
-                                    <li class="dropdown-item px-5 py-4 border-bottom"><a class="text-decoration-none"
-                                            style="color: black;" href="">Edit profile</a></li>
-                                    <li class="dropdown-item px-5 py-4"><a class="text-decoration-none"
-                                            style="color: black;" href="">Help</a></li>
+                                            style="color: black;" target="_blank" href="https://support.udemy.com/hc/en-us">Help</a></li>
                                     <li class="dropdown-item px-5 py-4 border-bottom"><a id="log-out"
                                             class="text-decoration-none" style="color: black;" href="../index.html">Log
                                             out</a></li>
@@ -527,7 +511,7 @@
     </header>
 
     <div style="z-index: 1;" class="d-none d-lg-block p-4 position-fixed top-0 start-0 end-0 bg-dark">
-        <div class="fw-semibold text-light">The Web Developer Bootcamp 2022</div>
+        <div class="course-name fw-semibold text-light">The Web Developer Bootcamp 2022</div>
         <div class="text-warning">
             4.7
             <i class="fa-solid fa-star"></i>
@@ -539,10 +523,10 @@
     <div class="d-none d-lg-block position-fixed shadow-lg bg-white"
         style="width: 36rem; top: 3rem; bottom: 0; right: 7rem;">
         <div>
-            <img src="../images/container-content/2/container-1.jpg" class="w-100 img-fluid" alt="">
+            <img  src="../images/container-content/2/container-1.jpg" class="w-100 img-fluid course-img" alt="">
         </div>
         <div class="p-4">
-            <span class="fw-bold fs-1 me-2">
+            <span class="course-price fw-bold fs-1 me-2">
                 $16.99
             </span>
             <span class="text-decoration-line-through me-2">
@@ -556,7 +540,7 @@
                 <i class="fa-solid fa-alarm-clock fs-2"></i>
                 <span class="text-danger"> <b>8 hours</b> left at this price!</span>
                 <button style="background-color: #8710d8;"
-                    class="mt-3 btn rounded-0 d-block w-100 text-white py-3 fs-3">Add to cart</button>
+                    class="mt-3 btn rounded-0 d-block w-100 text-white py-3 fs-3 add-btn">Add to cart</button>
                 <div class="fs-5 text-center mt-4">30-Day Money-Back Guarantee</div>
             </div>
 
@@ -606,11 +590,11 @@
                 </nav>
                 <!-- reponsive -->
                 <div class="d-block d-lg-none">
-                    <img src="../images/container-content/2/container-1.jpg" class="w-100 h-100 img-fluid mb-3" alt="">
+                    <img src="../images/container-content/2/container-1.jpg" class="w-100 h-100 img-fluid mb-3 course-img" alt="">
                 </div>
 
 
-                <h2 class="text-white">The Web Developer Bootcamp 2022</h2>
+                <h2 class="course-name text-white">The Web Developer Bootcamp 2022</h2>
                 <p class="text-white">COMPLETELY REDONE - The only course you need to learn web development - HTML, CSS,
                     JS, Node, and More!
                 </p>
@@ -626,7 +610,7 @@
                     <span class="text-white">792,504 students</span>
                 </div>
 
-                <span class="text-white">Created by </span> <a href="">Colt Steele</a>
+                <span class="text-white">Created by </span> <a class="course-instructor" href="">Colt Steele</a>
 
                 <div class="d-flex flex-column flex-lg-row">
                     <a class="text-decoration-none text-white" href="">
@@ -646,7 +630,7 @@
 
                 <!-- reponsive -->
                 <div class="text-white d-block d-lg-none">
-                    <span class="fw-bold fs-1 me-2">
+                    <span class="course-price fw-bold fs-1 me-2">
                         $16.99
                     </span>
                     <span class="text-decoration-line-through me-2">
@@ -658,7 +642,7 @@
                     <i class="fa-solid fa-alarm-clock fs-2"></i>
                     <span class="text-danger"> <b>8 hours</b> left at this price!</span>
                     <button style="background-color: #8710d8;"
-                        class="mt-3 btn rounded-0 d-block w-100 text-white py-3 fs-3">Add to cart</button>
+                        class="mt-3 btn rounded-0 d-block w-100 text-white py-3 fs-3 add-btn">Add to cart</button>
                     <div class="fs-5 text-center mt-4">30-Day Money-Back Guarantee</div>
                     <div class="fw-semibold py-3">
                         <a class="text-white me-3" href="">
@@ -1036,6 +1020,7 @@
 
     <script src="../account/account.js">
     </script>
+    <script src="./course.js"></script>
 </body>
 
 </html>

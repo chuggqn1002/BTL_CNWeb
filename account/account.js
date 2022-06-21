@@ -21,9 +21,17 @@ adv_btn.onclick = () => {
 
 //xem khoa hoc
 var course_infos = document.querySelectorAll('.courses');
+
 course_infos.forEach((course_info) => {
     course_info.onclick = (e) => {
         e.preventDefault();
+        localStorage.setItem('course-info',JSON.stringify({
+          img:course_info.querySelector('img').src,
+          name:course_info.querySelector('h3 a').textContent,
+          instructor:course_info.querySelector('.course-card-instr').textContent,
+          price: course_info.querySelector('.price-text span').textContent
+        }))
+        
         window.location.href = '../course/course.html';
     }
 })
@@ -75,7 +83,7 @@ var add = function (id) {
     }
     console.log(imgCourse)
     // console.log(cart)
-    courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
+    let courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
     if (courses.length == 0 || courses.every((course) => {
         return (user_emails[0].textContent != course.email)
     }))
