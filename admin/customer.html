@@ -14,7 +14,7 @@
 
 <body>
     <main class="d-flex">
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+        <div id="sidebarAdmin" class="d-sm-flex flex-column flex-shrink-0 p-3 bg-light d-none"  style="width: 280px;">
             <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <img src="../images/logo-udemy.png" class="bi pe-none me-2">
                 <span class="fs-4 sidebar-title">Admin Page</span>
@@ -93,23 +93,26 @@
             <div class="tab-pane fade show active" id="pills-account" role="tabpanel"
                 aria-labelledby="pills-account-tab" tabindex="0">
                 <div class="pane-heading">
+                    <div class="menuBtn" style="display: none;">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <h1 class="text-center">Account Management</h1>
                 </div>
                 <div class="container-fluid px-0">
                     <div class="row-wrapper">
-                        <div class="row mx-5 my-4">
-                            <div class="col-lg-4 col-6">
+                        <div class="row mx-sm-5 mx-1 my-4">
+                            <div class="col-lg-4 col-12 d-flex align-items-center">
                                 <form class="d-flex" role="search">
                                     <input class="form-control me-2" type="search" placeholder="Type category name here"
                                         aria-label="Search">
                                     <button class="btn btn-outline-success" type="submit">Search</button>
                                 </form>
                             </div>
-                            <div class="col-lg-8 col-6">
+                            <div class="col-lg-8 col-12">
                                 <div class="d-flex justify-content-evenly">
                                     <button type="button" class="btn btn-primary">Add</button>
                                     <button type="button" class="btn btn-danger">Delete</button>
-                                    <button type="button" class="btn btn-success">Update and Save changes</button>
+                                    <button type="button" class="btn btn-success">Update changes</button>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +172,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
-    <script src="./admin.js"></script>
+    <script src="./jsAdmin/customer.js"></script>
 </body>
 
 </html>

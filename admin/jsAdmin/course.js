@@ -58,6 +58,7 @@ function add() {
     // console.log(content)
 
     var item = {
+        num: courseNum,
         courseId: course_id,
         categoryId: category_id,
         Name: course_name,
@@ -138,10 +139,10 @@ function render() {
     for (let i = 0; i < data.length; i++) {
         
         table += `<tr>
-        <td scope="row"><input class="form-check-input course-check" type="checkbox" value="${courseNum}"
+        <td scope="row"><input class="form-check-input course-check" type="checkbox" value="${data[i].num}"
                 id="flexCheckDefault"></td>
         <td><i class="fa-regular fa-file fs-3"></i></td>
-        <td>${courseNum}</td>
+        <td>${data[i].num}</td>
         <td>${data[i].courseId}</td>
         <td>${data[i].categoryId}</td>
         <td>${data[i].Name}</td>
@@ -155,3 +156,13 @@ function render() {
 
     document.getElementById('renderTable').innerHTML = table
 }
+
+
+// responsive
+
+var menu = document.querySelector(".menuBtn");
+menu.addEventListener("click",function(){
+    menu.classList.toggle("click")
+    document.querySelector("#sidebarAdmin").classList.toggle("showSidebar")
+    document.querySelector("#sidebarAdmin").classList.toggle("d-none")
+})

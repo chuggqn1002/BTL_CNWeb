@@ -72,6 +72,47 @@ body {
 }
 
 .table-justified{
-  height: 750px;
+  height: 75vh;
   overflow-y: scroll;
+}
+
+.menuBtn{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  background: #212529;
+  cursor: pointer;
+}
+
+.menuBtn i{
+  color: white;
+  line-height: 35px;
+  font-size: 24px !important;
+}
+
+.click{
+  left: 330px;
+}
+
+@media only screen and (max-width: 600px) {
+   /* #sidebarAdmin{
+    display: none !important;
+  }  */
+
+  .table-justified {
+    height: 70vh;
+  }
+
+  .menuBtn{
+    display: block !important;
+  }
+}
+
+.showSidebar{
+  position: fixed;
+  width: 375px !important;
+  height: 650px !important;
 }
