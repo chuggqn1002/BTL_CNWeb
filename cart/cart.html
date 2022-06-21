@@ -358,7 +358,7 @@
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <a class="nav-link bridge-bot text-dark" href="#">
+                <a class="nav-link bridge-bot text-dark" target="_blank" href="https://business.udemy.com/request-demo-mx/?locale=en_US&mx_pg=httpcachecontextsme-list&ref=logged-in-nav&user_type=mx&utm_method=0&utm_source=marketplace">
                   Udemy Business
                   <div class="text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
                     aria-labelledby="dropdownMenuButton1">
@@ -544,5 +544,20 @@
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
   crossorigin="anonymous"></script>
 <script src="./cart.js"></script>
+<script src="">
+  const user_infor = JSON.parse(localStorage.getItem('log in'));
+const user_names = document.querySelectorAll('.user-name');
+const user_emails = document.querySelectorAll('.user-email');
+// hien ten tai khoan
+user_names.forEach((user_name) => {
+    user_name.textContent = user_infor.Name;
+})
+user_emails.forEach((user_email) => {
+    user_email.textContent = user_infor.Email;
+})
+//dang xuat
+const log_out = document.getElementById('log-out');
+log_out.onclick = () => localStorage.removeItem('log in')
+</script>
 </body>
 </html>

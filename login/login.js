@@ -15,7 +15,7 @@ form.onsubmit = function(e) {
     //admin page
     if(email.value === 'admin@gmail.com' && password.value === 'admin2022') {
         console.log('sign in');
-        window.location.href = '../admin/admin.html';
+        window.location.href = '../admin/course.html';
     }
     //log in
     let users = JSON.parse(localStorage.getItem('users')) ? JSON.parse(localStorage.getItem('users')) : [];

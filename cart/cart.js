@@ -78,9 +78,9 @@ if (courses.length != 0 && courses.some((course) => {
         index++;
         cart_container.innerHTML = '';
         cart_container.innerHTML += `
-        <div class="col-8">
+        <div class="col-md-8">
         <h3 class="fw-normal"><span id="course-index"></span> Courses in Cart</h3>
-        <div class="course`+ index +` d-flex gap-4 justify-content-between border p-3">
+        <div class="course`+ index +` d-flex gap-4 justify-content-between border p-3 flex-column flex-md-row">
           <div>
             <img class="w-100" src="`+ course.img +`" alt="">
           </div>
@@ -116,7 +116,7 @@ if (courses.length != 0 && courses.some((course) => {
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4">
         <h3 class="fw-normal">Total:</h3>
         <h1 id="total">$169.98</h1>
         <button style="background-color: #a435f0;" class="w-100 p-4 text-white border-0">Check out</button>
@@ -131,7 +131,7 @@ if (courses.length != 0 && courses.some((course) => {
     else{
       index++;
        //s console.log(cart_container.firstElementChild)
-        cart_container.firstElementChild.innerHTML += `        <div class="course`+ index +` d-flex gap-4 justify-content-between border p-3">
+        cart_container.firstElementChild.innerHTML += `        <div class="course`+ index +` d-flex gap-4 justify-content-between border p-3 flex-column flex-md-row">
           <div>
             <img class="w-100" src="`+ course.img +`" alt="">
           </div>

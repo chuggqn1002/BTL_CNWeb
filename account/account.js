@@ -18,53 +18,6 @@ var adv_btn = document.getElementById('dismis-ad');
 adv_btn.onclick = () => {
     adv.style.display = 'none';
 }
-//them vao gio hang
-// var btnAdd = document.getElementById('btn-add');
-// console.log(typeof btnAdd)
-// var addCourses = document.querySelectorAll('.course');
-// let courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
-// var cart = document.getElementById('cart');
-// console.log(user_emails)
-// console.log (courses)
-// if(courses.length >0 && courses.some((course) => {
-//     return(user_emails[0].textContent == course.email)
-// }))
-// {
-//     cart.innerHTML = '';
-//     //console.log(1)
-//     courses.forEach((course) => {
-//         //console.log(user_email.textContent == course.email)
-//         if(user_emails[0].textContent == course.email)
-//         cart.innerHTML += course.text;
-//     })
-// }
-
-// // console.log(course.innerHTML)
-// addCourses.forEach((addCourse,i) => {
-//     addCourse.onclick = (e) => {
-//         e.preventDefault();
-//         courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
-
-//         if(courses.length == 0 || courses.every((course) => {
-//             return(user_emails[0].textContent != course.email)
-//         }))
-//         cart.innerHTML = '';
-
-
-
-//         let course = {
-//             email : user_infor.Email,
-//             text: addCourses[i].innerHTML
-//         }
-//         // console.log(addCourses[i])
-//         courses.push(course);
-//         localStorage.setItem('courses', JSON.stringify(courses))
-//         cart.innerHTML += course.text;
-//     }
-// })
-
-// cart.append(course.innerHTML);
-// cart.append(course);
 
 //xem khoa hoc
 var course_infos = document.querySelectorAll('.courses');
@@ -194,7 +147,7 @@ var add = function (id) {
     newGoToCartBtn.id = 'goToCartBtn';
     cart.append(newGoToCartBtn);
 }
-
+//load gio hang
 courses = JSON.parse(localStorage.getItem('courses')) ? JSON.parse(localStorage.getItem('courses')) : [];
 console.log(user_emails[0].textContent == courses[0].email)
 if (courses.length != 0 && courses.some((course) => {

@@ -117,7 +117,8 @@
         </nav>
 
         <!-- nav -->
-        <nav class="navbar navbar-expand-md d-none d-md-flex navbar-light bg-light" style="padding: 0 1.5rem; z-index: 2;">
+        <nav class="navbar navbar-expand-md d-none d-md-flex navbar-light bg-light"
+            style="padding: 0 1.5rem; z-index: 2;">
             <div class="container-fluid d-none d-md-flex gap-4">
                 <a class="" href="../account/account.html">
                     <img src="../images/logo-udemy.png" alt="">
@@ -425,7 +426,8 @@
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
-                                <a class="nav-link bridge-bot text-dark" href="#">
+                                <a class="nav-link bridge-bot text-dark" target="_blank"
+                                    href="https://business.udemy.com/request-demo-mx/?locale=en_US&mx_pg=httpcachecontextsme-list&ref=logged-in-nav&user_type=mx&utm_method=0&utm_source=marketplace">
                                     Udemy Business
                                     <div class="text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
                                         aria-labelledby="dropdownMenuButton1">
@@ -460,7 +462,7 @@
                             <div class="dropdown">
                                 <a style="color: black;" href="../cart/cart.html"><i
                                         class="bridge-bot fa-solid fa-cart-shopping"></i></a>
-                                <div id="cart"
+                                <div style="max-height: 40rem; overflow-y: scroll;" id="cart"
                                     class="p-4 text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
                                     aria-labelledby="dropdownMenuButton1">
                                     <p class="m-3 text-black-50">
@@ -592,6 +594,7 @@
 
     </div>
     <main class="">
+
         <div class="py-5 row bg-dark">
             <div class="col-lg-5 px-5 text-center text-lg-start">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -670,7 +673,17 @@
                 </div>
             </div>
         </div>
+        <div id="advertisement" class="col-lg-7 bg-dark p-4 row" style="margin-top: 48px;">
+            <div class="text-white col-md-auto col-12 flex-grow-1 p-0 d-flex align-items-center">
+                <div class="">Training 5 or more people? Get your team access to Udemy's top 15,000+ courses</div>
+            </div>
+            <div class="p-0 col-md-auto col-12">
+                <a target="_blank" href="https://business.udemy.com/request-demo-mx/?locale=en_US&mx_pg=httpcachecontextsme-list&ref=logged-in-nav&user_type=mx&utm_method=0&utm_source=marketplace"><button type="button" class="btn btn-light rounded-0 border border-white col-md-auto col-12 mt-2" style="font-size: 14px; height: 40px;">Get Udemy business</button></a>
+                <button type="button" class="btn btn-dark rounded-0 border border-white px-3 col-md-auto col-12 mt-2"
+                    style="font-size: 14px; height: 40px;" id="dismis-ad">Dismiss</button>
+            </div>
 
+        </div>
         <div class="col-lg-7 px-5 ">
             <div class="p-4 my-5 border">
                 <h1>What you'll learn</h1>
@@ -802,47 +815,68 @@
 
             <div id="accordion" style="z-index: -1;">
                 <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
-                      </button>
-                    </h5>
-                  </div>
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                            </button>
+                        </h5>
                     </div>
-                  </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                            </button>
+                        </h5>
                     </div>
-                  </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                            </button>
+                        </h5>
                     </div>
-                  </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -860,22 +894,28 @@
 
             <h2 class="my-5">Description</h2>
             <h4 class="mb-4">COMPLETELY REDONE WITH OVER 500 BRAND NEW VIDEOS!</h4>
-            <p class="fs-5">Hi! Welcome to the brand new version of The Web Developer Bootcamp, Udemy's most popular web development course.  This course was just completely overhauled to prepare students for the 2022 job market, with over 60 hours of brand new content. This is the <b> only course you need to learn web development. </b> There are a lot of options for online developer training, but this course is without a doubt the most comprehensive and effective on the market.  Here's why:</p>
+            <p class="fs-5">Hi! Welcome to the brand new version of The Web Developer Bootcamp, Udemy's most popular web
+                development course. This course was just completely overhauled to prepare students for the 2022 job
+                market, with over 60 hours of brand new content. This is the <b> only course you need to learn web
+                    development. </b> There are a lot of options for online developer training, but this course is
+                without a doubt the most comprehensive and effective on the market. Here's why:</p>
             <div class="collapse" id="collapseExample">
                 <div class="">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                 </div>
             </div>
-            <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
                 Show more or less
             </a>
-            
+
 
             <div class="p-4 border my-5">
                 <h2>Featured review</h2>
                 <div class="d-flex">
                     <div class="border rounded-circle fs-2 px-5">
-                    <i class="fa-solid fa-user pt-4"></i>
+                        <i class="fa-solid fa-user pt-4"></i>
                     </div>
                     <div class="ms-3">
                         <div class="fw-semibold">Ulvi S.</div>
@@ -884,10 +924,12 @@
                     </div>
                 </div>
                 <div class="text-warning d-inline-block">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
                 <span class="fs-5">2 years ago</span>
-                <p>It was so challenging and full of knowledge! I have learned a lot from this course. Colt is the best instructor, respect! He explains everything that way so you get it instantly.</p>
+                <p>It was so challenging and full of knowledge! I have learned a lot from this course. Colt is the best
+                    instructor, respect! He explains everything that way so you get it instantly.</p>
             </div>
         </div>
     </main>
@@ -955,11 +997,10 @@
         crossorigin="anonymous"></script>
 
 
-    <script src="../account/account.js"></script>
+    
 
-    <script src="../main.js"></script>
-
-    <script src="../login/login.js"></script>
+    <script src="../account/account.js">
+    </script>
 </body>
 
 </html>

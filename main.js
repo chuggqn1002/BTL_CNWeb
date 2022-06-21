@@ -57,3 +57,11 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+
+var courses = document.querySelectorAll('.course');
+courses.forEach((course) => {
+    course.addEventListener('click',() => {
+        window.location.href = './course/courseoffline.html';
+    })
+})
