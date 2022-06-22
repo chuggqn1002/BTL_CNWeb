@@ -103,7 +103,7 @@
                         <div class="row mx-sm-5 mx-1 my-4">
                             <div class="col-lg-4 col-12 d-flex align-items-center">
                                 <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Type category name here"
+                                    <input class="form-control me-2" type="search" placeholder="Type account email here"
                                         aria-label="Search">
                                     <button class="btn btn-outline-success" type="submit">Search</button>
                                 </form>
@@ -111,8 +111,9 @@
                             <div class="col-lg-8 col-12">
                                 <div class="d-flex justify-content-evenly">
                                     <button type="button" class="btn btn-primary">Add</button>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                    <button type="button" class="btn btn-success">Update changes</button>
+                                    <button type="button" id="course-del" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#updateModal">Update changes</button>
                                 </div>
                             </div>
                         </div>
@@ -127,39 +128,80 @@
                                     <th scope="col">Account Email</th>
                                     <th scope="col">Account Password</th>
                                     <th scope="col">User Name</th>
+                                    <th scope="col">Course has own</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="1"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>1</td>
                                     <td>tlu1@gmail.com</td>
                                     <td>123456as</td>
                                     <td>TLU</td>
+                                    <td>3 courses ( <a href="./courseDetails/courseDetails.html">Show details</a> )</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="2"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>2</td>
                                     <td>quangchung@gmail.com</td>
                                     <td>web@2022</td>
                                     <td>Chung</td>
+                                    <td>3 courses ( <a href="./courseDetails/courseDetails.html">Show details</a> )</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="3"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="3"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>3</td>
                                     <td>nhadau@gmail.com</td>
                                     <td>123456789</td>
                                     <td>Guesttt</td>
+                                    <td>3 courses ( <a href="./courseDetails/courseDetails.html">Show details</a> )</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <!-- Update-Modal -->
+                <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="updateModalLabel">Update and save changes to database</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Do you really want to apply these changes have done ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary " data-bs-dismiss="modal"
+                                data-bs-toggle="modal" data-bs-target="#updateSubModal">Yes</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Update-Sub-Modal -->
+            <div class="modal fade" id="updateSubModal" tabindex="-1" aria-labelledby="subLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="subLabel">Update and save changes to database Successful
+                            </h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
                 </div>
             </div>

@@ -111,8 +111,9 @@
                             <div class="col-lg-8 col-12">
                                 <div class="d-flex justify-content-evenly">
                                     <button type="button" class="btn btn-primary">Add</button>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                    <button type="button" class="btn btn-success">Update changes</button>
+                                    <button type="button" id="course-del" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success"  data-bs-toggle="modal"
+                                    data-bs-target="#updateModal">Update changes</button>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +131,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="1"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>1</td>
@@ -140,7 +141,7 @@
 
                                 </tr>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="2"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>2</td>
@@ -152,6 +153,43 @@
                             </tbody>
                         </table>
                     </div>
+                    <!-- Update-Modal -->
+                <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="updateModalLabel">Update and save changes to database</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Do you really want to apply these changes have done ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary " data-bs-dismiss="modal"
+                                data-bs-toggle="modal" data-bs-target="#updateSubModal">Yes</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Update-Sub-Modal -->
+            <div class="modal fade" id="updateSubModal" tabindex="-1" aria-labelledby="subLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="subLabel">Update and save changes to database Successful
+                            </h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
                 </div>
             </div>

@@ -71,6 +71,7 @@ function add() {
     data.push(item)
     console.log(data)
     render()
+    clear()
 }
 
 function render() {
@@ -97,7 +98,7 @@ function render() {
         <td>PYTHON001</td>
         <td>DEVELOPMENT</td>
         <td>Learn Python: The Complete Python Programming Course</td>
-        <td>15 sections <br> ( <a href="">Show details</a> )</td>
+        <td>15 sections <br> ( <a href="./content/content.html">Show details</a> )</td>
         <td><img src="../images/container-content/container-1.jpg" alt="" height="135"
                 width="240"></td>
         <td>$84.99</td>
@@ -112,7 +113,7 @@ function render() {
         <td>PYTHON002</td>
         <td>DEVELOPMENT</td>
         <td>Learn Python: The Complete Python Programming Course</td>
-        <td>15 sections <br> ( <a href="">Show details</a> )</td>
+        <td>15 sections <br> ( <a href="./content/content.html">Show details</a> )</td>
         <td><img src="../images/container-content/container-2.jpg" alt="" height="135"
                 width="240"></td>
         <td>$84.99</td>
@@ -126,7 +127,7 @@ function render() {
         <td>PYTHON003</td>
         <td>DEVELOPMENT</td>
         <td>Learn Python: The Complete Python Programming Course</td>
-        <td>15 sections <br> ( <a href="">Show details</a> )</td>
+        <td>15 sections <br> ( <a href="./content/content.html">Show details</a> )</td>
         <td><img src="../images/container-content/container-3.jpg" alt="" height="135"
                 width="240"></td>
         <td>$84.99</td>
@@ -155,6 +156,20 @@ function render() {
     }
 
     document.getElementById('renderTable').innerHTML = table
+}
+
+function clear(){
+    document.getElementById("course-code").value=""
+    document.getElementById("category-code").value=""
+    document.getElementById("course-title").value=""
+
+    var options = document.getElementById("inputContent");
+    for (var i = 0, l = options.length; i < l; i++) {
+        options[i].selected = options[i].defaultSelected;
+    }   
+     
+    document.getElementById("author").value=""
+    document.getElementById("pricing").value=""
 }
 
 
