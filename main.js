@@ -1,3 +1,16 @@
+var categories = document.querySelectorAll('.categories');
+categories.forEach((category) => {
+    category.addEventListener('click',() => {
+        let category_name = category.textContent
+        while(category_name.includes('  ')){
+            category_name = category_name.replace('  ',' ')
+        }
+        category_name = category_name.replace('\n','')
+        localStorage.setItem('category', JSON.stringify(category_name))
+    })
+    
+})
+
 console.log($("[data-toggle=popover]"))
 $(function () {
     $("[data-toggle=popover]").popover({
@@ -59,9 +72,3 @@ var swiper = new Swiper(".slide-content", {
   });
 
 
-var courses = document.querySelectorAll('.course');
-courses.forEach((course) => {
-    course.addEventListener('click',() => {
-        window.location.href = './course/courseoffline.html';
-    })
-})
