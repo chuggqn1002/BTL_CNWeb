@@ -110,9 +110,11 @@
                             </div>
                             <div class="col-lg-8 col-12">
                                 <div class="d-flex justify-content-evenly">
-                                    <button type="button" class="btn btn-primary">Add</button>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                    <button type="button" class="btn btn-success">Update changes</button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#addModal">Add</button>
+                                    <button type="button" id="course-del" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#updateModal">Update changes</button>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +134,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="1"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>1</td>
@@ -153,7 +155,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="1"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="1"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>1</td>
@@ -174,7 +176,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="2"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="2"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>2</td>
@@ -196,7 +198,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input" type="checkbox" value="3"
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="3"
                                             id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>3</td>
@@ -222,6 +224,116 @@
                     </div>
 
                 </div>
+
+                <!--Add-Modal -->
+                <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="addModalLabel">Add new course</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="course-code" class="form-label">Course Code</label>
+                                        <input type="text" class="form-control" id="course-code">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="category-code" class="form-label">Category Code</label>
+                                        <input type="text" class="form-control" id="category-code">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="course-title" class="form-label">Course Title</label>
+                                        <input type="text" class="form-control" id="course-title">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputContent" class="form-label">Course content</label>
+                                        <select id="inputContent" class="form-select">
+                                            <option selected>Choose number of content</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="author" class="form-label">Author name</label>
+                                        <input type="text" class="form-control" id="author">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="pricing" class="form-label">Pricing</label>
+                                        <input type="text" class="form-control" id="pricing">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="imgFile" class="form-label">Select image</label>
+                                        <input class="form-control" type="file" id="imgFile">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="acceptAddBtn" type="submit" class="btn btn-primary" onclick="add()" data-bs-dismiss="modal">Add new
+                                    course</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Update-Modal -->
+                <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="updateModalLabel">Update and save changes to database</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Do you really want to apply these changes have done ?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary " data-bs-dismiss="modal"
+                                    data-bs-toggle="modal" data-bs-target="#updateSubModal">Yes</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Update-Sub-Modal -->
+                <div class="modal fade" id="updateSubModal" tabindex="-1" aria-labelledby="subLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="subLabel">Update and save changes to database Successful
+                                </h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>  
 
         </div>
