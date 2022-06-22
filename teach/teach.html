@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Side bar -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="position-fixed start-0 modal-dialog-scrollable modal-dialog m-0 rounded-0 h-100">
+      <div class="modal-content rounded-0 h-100 p-3">
+        <div class="modal-header">
+          <button type="button" class="btn-close position-fixed p-4 fs-4" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <ul class="list-unstyled">
+            <li><a class="text-decoration-none fs-3 user-name" href="#"></a></li>
+            <li class="mt-3"><a class="text-decoration-none fs-3 user-email" href="#"></a></li>
+            <li class="mt-3"><a class="text-decoration-none fs-3" href="../learning/learning.html">My learning </a></li>
+            <li class="mt-3"><a class="text-decoration-none fs-3" href="../index.html">Log out </a></li>
+          </ul>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <ul class="list-unstyled fs-3">
+            <div class="mb-2 fw-bolder text-black-50">Most popular</div>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">Web
+                Development</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">Mobile
+                Development</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li><a href="#"></a></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">Game
+                Development</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none"
+                href="#">Entrepreneurship</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">Business Analytics
+                & Intelligence</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">Digital
+                Marketing</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">Graphic Design &
+                Illustration</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">IT
+                Certifications</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">Personal
+                Transformation</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+            <li class="mb-4 d-flex justify-content-between"><a class="text-decoration-none" href="#">All
+                categories</a><i class="mt-2 fa-solid fa-angle-right"></i></li>
+          </ul>
+        </div>
+        <div class="modal-footer d-block">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+          <ul class="list-unstyled fs-3">
+            <div class="mb-2 fw-bolder text-black-50">More from Udemy</div>
+            <li class="mb-4"><a class="text-decoration-none" href="#">Get the app</a></li>
+            <li class="mb-4"><a class="text-decoration-none" href="#">Invite friends</a></li>
+            <li class="mb-4"><a class="text-decoration-none" href="#">Help</a></li>
+            <li class="mb-4">
+              <button type="button" class="btn btn-outline-dark fs-4 w-50 rounded-0">
+                <i class="fa-solid fa-globe"></i>
+                English
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- form search for mobile -->
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog h-100 w-100 m-0 mw-100">
+      <div class="modal-content rounded-0 h-100 px-3">
+        <div class="modal-header d-flex">
+          <i class="fa-solid fa-magnifying-glass py-3"></i>
+          <input type="search" name="" id="" class="border-0 flex-grow-1 mx-3 py-3" placeholder="Search for anything">
+          <button type="button" class="btn-close py-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <!-- header -->
+  <header>
+    <!-- nav reponsive -->
+    <nav class="nav d-md-none d-flex align-items-center navbar-mobile">
+      <a class="nav-link" href="#" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <a class="nav-link" href="#">
+        <img src="../images/logo-udemy.png" alt="">
+      </a>
+      <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+      <a class="nav-link" href="../cart/cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    </nav>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-md d-none d-md-flex navbar-light bg-light" style="padding: 0 1.5rem;">
+      <div class="container-fluid d-none d-md-flex gap-4">
+        <a class="" href="#">
+          <img src="../images/logo-udemy.png" alt="">
+        </a>
+        <div class="navbar__right" style="flex: 9;" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 nav-bar-right">
+            <li class="nav-item">
+              <div class="dropdown bridge-bot">
+                <a class="nav-link text-dark categories " id="dropdownMenuButton1" aria-current="page" href="#">
+                  Categories
+                </a>
+                <ul class="dropdown-menu categories-menu width-300 height-700 relative"
+                  aria-labelledby="dropdownMenuButton1">
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Development</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Development-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Web
+                            Development</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Data
+                            Science</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Mobile Development</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Business</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Business-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Entrepreneurship</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Communication</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Management</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Finance & Acounting</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu FinanceAcounting-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Accounting & Bookkeeping</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Compliance</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Cryptocurrency & Blockchain</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">IT & Software</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu ItSoftware-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">It
+                            Certifications</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Network & Security</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Hardware</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Office Productivity</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu OfficeProductivity-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Microsoft</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Apple</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Google</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Personal Development</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu PersonalDevelopment-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Personal Tranformation</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Personal Productivity</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Leader Ship</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Design</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Design-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Web
+                            Design</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Graphic Design & Illustration</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Design Tools</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Marketing</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Marketing-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Digital Marketing</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Search Engine Optimization</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Social Media Marketing</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Lifestyle</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Lifestyle-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Art &
+                            Crafts</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Beaty
+                            & Makeup</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Esoteric Practices</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Photography & Video</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu PhotographyVideo-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Digital Photography</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Photography</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Portrait Photography</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Health & Fitness</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu HealthFitness-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Fitness</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">General Health</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Sports</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Music</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu Music-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Instruments</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Music
+                            Production</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item" href="#">Music
+                            Fuldamentals</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                  <li class="">
+                    <div class="p-0 bridge-right dropdown dropdown-item d-flex justify-content-between">
+                      <a class="dropdown-item" id="dropdownMenuButton2" href="#">Teaching & Academics</a>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <ul class="width-300 height-700 dropdown-menu TeachingAcademics-menu absolute"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Engineering</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Humanities</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="d-flex justify-content-between dropdown-item"><a class="dropdown-item"
+                            href="#">Math</a><i class="fa-solid fa-angle-right"></i></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                </ul>
+
+
+              </div>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <form class="position-relative form-search-box">
+                <input class="search-box form-control fs-4" type="search" placeholder="Search for anything"
+                  aria-label="Search">
+                <i class="searchicon-Form position-absolute top-0 start-0 fa-solid fa-magnifying-glass"></i>
+              </form>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link bridge-bot text-dark" target="_blank" href="https://business.udemy.com/request-demo-mx/?locale=en_US&mx_pg=httpcachecontextsme-list&ref=logged-in-nav&user_type=mx&utm_method=0&utm_source=marketplace">
+                  Udemy Business
+                  <div class="text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
+                    aria-labelledby="dropdownMenuButton1">
+                    <h2 class="m-3">
+                      Get your team access to over 15,000 top Udemy courses, anytime, anywhere
+                    </h2>
+                    <a href="../signup/signup.html"><button type="button" class="p-3 m-3 w-75 btn text-white fs-4 bg-dark">Sign up</button>
+                    </a>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown d-none d-lg-block">
+                <a class="nav-link bridge-bot text-dark" href="#">
+                  Teach On Udemy
+                  <div class="text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
+                    aria-labelledby="dropdownMenuButton1">
+                    <h2 class="m-3">
+                      Turn what you know into an opportunity and reach millions around the world.
+                    </h2>
+                    <a href="#"><button type="button" class="p-3 m-3 w-75 btn text-white fs-4 bg-dark">Learn
+                        more</button></a>
+                  </div>
+                </a>
+              </div>
+
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <div class="dropdown">
+                <a style="color: black;" href="../cart/cart.html"><i class="bridge-bot fa-solid fa-cart-shopping"></i></a>
+                <div style="max-height: 40rem; overflow-y: scroll;" id="cart" class="p-4 text-center dropdown-menu UdemyBusiness-more position-absolute end-0"
+                  aria-labelledby="dropdownMenuButton1">
+                  <p class="m-3 text-black-50">
+                    Your cart is empty.
+                  </p>
+                  <a class="text-decoration-none" href="#">Keep shopping</a>
+                </div>
+              </div>
+
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <div class="dropdown bridge-bot">
+                <i class="fs-2 fa fa-user-circle" aria-hidden="true"></i>
+                <ul class="dropdown-menu gap-3 end-0" style="top: 200%;">
+                  <li class="dropdown-item px-5 py-4 border-bottom d-flex justify-content-between">
+                    <i class="fs-1 fa fa-user-circle flex-grow-1" aria-hidden="true"></i>
+                    <div class="d-flex flex-column">
+                      <a  class="text-decoration-none user-name" style="color: black;" href=""></a>
+                      <a  href="" style="color: black;" class="text-decoration-none user-email"></a>
+                    </div>
+                  </li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href="../learning/learning.html">My learning</a></li>
+                  <li class="dropdown-item px-5 py-4"><a href="../cart/cart.html" class="text-decoration-none" style="color: black;" href="">My cart</a></li>
+                  <li class="dropdown-item px-5 py-4 border-bottom"><a class="text-decoration-none" style="color: black;" href="">Teach on Udemy</a></li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href="">Notifications</a></li>
+                  <li class="dropdown-item px-5 py-4 border-bottom"><a class="text-decoration-none" style="color: black;" href="">Messages</a></li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href="">Account settings</a></li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href="">Payment methods</a></li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href="">Udemy credits</a></li>
+                  <li class="dropdown-item px-5 py-4 border-bottom"><a class="text-decoration-none" style="color: black;" href="">Purchase history</a></li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href="">Public profile</a></li>
+                  <li class="dropdown-item px-5 py-4 border-bottom"><a class="text-decoration-none" style="color: black;" href="">Edit profile</a></li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href="">Help</a></li>
+                  <li class="dropdown-item px-5 py-4 border-bottom"><a id="log-out" class="text-decoration-none" style="color: black;" href="../index.html">Log out</a></li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href=""> <b> Udemy Business </b></a></li>
+                  <li class="dropdown-item px-5 py-4"><a class="text-decoration-none" style="color: black;" href="">Bring learning to your company</a></li>
+                </ul>
+              </div>            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <main class="mt-2">
+    <div style="z-index: -1;" id="carouselExampleControls" class="carousel slide container-fluid container-md"
+      data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/slider/slider1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/slider/slider2.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </main> -->
+
+  <div>
+    <img class="w-100" src="../images/teach/teach-9.jpg" alt="">
+  </div>
+
+  <main>
+    <div style="padding: 88px 28px;">
+        <h2 class="text-center" style="font-size: 3.6rem;">So many reasons to start</h2>
+        <div class="row justify-content-between text-center">
+            <div class="col-12 col-md-3">
+                <img width="100" height="100" src="../images/teach/teach-1.jpg" alt="">
+                <h3>Teach your way</h3>
+                <p>Publish the course you want, in the way you want, and always have of control your own content.</p>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <img width="100" height="100" src="../images/teach/teach-2.jpg" alt="">
+                <h3>Inspire learners</h3>
+                <p>Teach what you know and help learners explore their interests, gain new skills, and advance their careers.</p>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <img width="100" height="100" src="../images/teach/teach-3.jpg" alt="">
+                <h3>Get rewarded</h3>
+                <p>Expand your professional network, build your expertise, and earn money on each paid enrollment.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-around text-white text-center" style="background-color: #5624D0; padding: 48px 0;">
+        <div class="col-3 col-md-2">
+          <div class="fw-semibold" style="font-size: 4rem;">49M</div>
+          <p>Student</p>
+        </div>
+        
+        <div class="col-3 col-md-2">
+            <div class="fw-semibold" style="font-size: 4rem;">75+</div>
+            <p>Languages</p>
+        </div>
+        
+        <div class="col-3 col-md-2">
+            <div class="fw-semibold" style="font-size: 4rem;">680M</div>
+            <p>Enrollments</p>
+        </div>
+        
+        <div class="col-3 col-md-2">
+            <div class="fw-semibold" style="font-size: 4rem;">180+</div>
+            <p>Countries</p>
+        </div>
+        
+        <div class="col-12 col-md-3">
+            <div class="fw-semibold" style="font-size: 4rem;">11,600+</div>
+            <p>Enterprise customers</p>
+        </div>
+    </div>
+
+    <div style="padding: 88px 28px;">
+      <h2 class="text-center" style="font-size: 3.6rem;">How to begin</h2>
+      <nav class="heading-tab">
+        <div class="nav nav-tabs headline mx-auto px-0 d-flex justify-content-center border-0" role="tablist">
+          <button class="nav-link active" id="nav-plan-tab" data-bs-toggle="tab" data-bs-target="#nav-Plan" type="button"
+            role="tab" aria-controls="nav-Plan" aria-selected="true" style="font-size: 2rem;">Plan your curriculum</button>
+          <button class="nav-link" id="nav-record-tab" data-bs-toggle="tab" data-bs-target="#nav-Record" type="button"
+            role="tab" aria-controls="nav-Record" aria-selected="false" style="font-size: 2rem;">Record your video</button>
+          <button class="nav-link" id="nav-launch-tab" data-bs-toggle="tab" data-bs-target="#nav-Launch" type="button"
+            role="tab" aria-controls="nav-Launch" aria-selected="false" style="font-size: 2rem;">Launch your course</button>
+        </div>
+      </nav>
+    
+      <div class="tab-content border-0 p-0" id="nav-tabContent">
+        <div class="tab-pane fade show active "
+          id="nav-Plan" role="tabpanel" aria-labelledby="nav-plan-tab" tabindex="0">
+          <div class="d-flex row justify-content-center align-items-center flex-lg-row flex-column-reverse">
+            <div class="col-12 col-lg-4">
+            <p>You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace
+              Insights tool.</p>
+            <p>The way that you teach — what you bring to it — is up to you.</p>
+            <h3 style="font-size: 1.9rem;">How we help you</h3>
+            <p>We offer plenty of resources on how to create your first course. And, our instructor dashboard and curriculum
+              pages help keep you organized.</p>
+    
+          </div>
+          <img class="col-12 col-lg-5 px-0" style="width: 480px; height: 480px;" src="../images/teach/teach-4.jpg" alt="">
+          </div>
+          
+        </div>
+    
+        <div class="tab-pane fade "
+          id="nav-Record" role="tabpanel" aria-labelledby="nav-record-tab" tabindex="0">
+          <div class="d-flex row justify-content-center align-items-center flex-lg-row flex-column-reverse">
+            <div class="col-12 col-lg-4">
+            <p>Use basic tools like a smartphone or a DSLR camera. Add a good microphone and you’re ready to start.</p>
+            <p>If you don’t like being on camera, just capture your screen. Either way, we recommend two hours or more of
+              video for a paid course.</p>
+            <h3>How we help you</h3>
+            <p>Our support team is available to help you throughout the process and provide feedback on test videos.</p>
+    
+          </div>
+          <img class="col-12 col-lg-5 px-0" style="width: 480px; height: 480px;" src="../images/teach/teach-5.jpg" alt="">
+          </div>
+          
+        </div>
+    
+        <div class="tab-pane fade "
+          id="nav-Launch" role="tabpanel" aria-labelledby="nav-launch-tab" tabindex="0">
+          <div class="d-flex row justify-content-center align-items-center flex-lg-row flex-column-reverse">
+            <div class="col-12 col-lg-4">
+            <p>Gather your first ratings and reviews by promoting your course through social media and your professional
+              networks.</p>
+            <p>Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.</p>
+            <h3>How we help you</h3>
+            <p>Our custom coupon tool lets you offer enrollment incentives while our global promotions drive traffic to
+              courses. There’s even more opportunity for courses chosen for Udemy Business.</p>
+    
+          </div>
+          <img class="col-12 col-lg-5 px-0" style="width: 480px; height: 480px;" src="../images/teach/teach-6.jpg" alt="">
+          </div>
+          
+        </div>
+      </div>
+        
+        
+    </div>
+
+    <div class="d-flex row justify-content-center align-items-center" style="background-color: #f7f9fa; margin-bottom: 88px;">
+      <img class=" col-12 col-lg-4 px-0 me-5" style="width: 400px; height: 400px;" src="../images/teach/teach-7.jpg" alt="">
+      <div class="col-12 col-lg-4 px-0" style="max-width: 40rem;">
+        <p class="fs-2">“I’m proud to wake up knowing my work is helping people around the world improve their careers and build great things. 
+          While being a full-time instructor is hard work, it lets you work when, where, and how you want.”</p>
+        <h3 class="fs-4">Frank Kane</h3>
+        <p class="fw-light fs-4">Data Science & IT Certifications</p>
+      </div>
+    </div>
+
+    <div class="text-center" style="padding: 88px 24px;">
+      <h2 style="font-size: 3.6rem;">Become an instructor today</h2>
+      <p style="font-size: 2rem; margin: 16px 0 24px;">Join one of the world’s largest online learning marketplaces.</p>
+      <button type="button" class="btn btn-dark rounded-0 fw-semibold col-sm-auto col-12" style="font-size: 16px; height: 4.8rem; width: 29.6rem;">Get started</button>
+    </div>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark">
+    <div class="row justify-content-between align-items-center" style="padding: 12px 48px; border-bottom: 1px solid #3e4143;">
+      <div class="col-12 col-md-auto">
+        <span class="text-white fw-semibold" style="font-size: 1.9rem;">
+          Top companies choose 
+          <a style="color: #cec0fc;" href="https://business.udemy.com/request-demo-mx/?locale=en_US&ref=footer-ad&user_type=visitor&utm_method=0&utm_source=marketplace">
+            Udemy Business
+          </a>
+           to build in-demand career skills.
+        </span>
+      </div>
+
+      <div class="col-12 col-md-auto">
+        <img src="../images/companies/company-1.svg" alt="">
+        <img src="../images/companies/company-2.svg" alt="">
+        <img src="../images/companies/company-3.svg" alt="">
+        <img src="../images/companies/company-4.svg" alt="">
+        <img src="../images/companies/company-5.svg" alt="">
+      </div>
+    </div>
+
+    <div style="padding: 24px 48px 0;">
+      <div class="text-white">
+        <div class="row flex-lg-row flex-column-reverse">
+          <ul class="list-unstyled col-12 col-md-3 px-0" style="font-size: 14px;">
+            <li class="py-2">Udemy Business</li>
+            <li class="py-2">Teach on Udemy</li>
+            <li class="py-2">Get the app</li>
+            <li class="py-2">About us</li>
+            <li class="py-2">Contact us</li>
+          </ul>
+
+          <ul class="list-unstyled col-12 col-md-3 px-0" style="font-size: 14px;">
+            <li class="py-2">Careers</li>
+            <li class="py-2">Blog</li>
+            <li class="py-2">Help and Support</li>
+            <li class="py-2">Affiliate</li>
+            <li class="py-2">Investors</li>
+          </ul>
+
+          <ul class="list-unstyled col-12 col-md-3 px-0" style="font-size: 14px;">
+            <li class="py-2">Terms</li>
+            <li class="py-2">Privacy policy</li>
+            <li class="py-2">Cookie settings</li>
+            <li class="py-2">Sitemap</li>
+            <li class="py-2">Accessibility statement</li>
+          </ul>
+
+          <div class="col-md-2 offset-md-1 text-md-end text-start px-0 pb-4">
+            <button type="button" class="btn btn-dark rounded-0 border border-white px-4"
+              style="width: 140px; height: 40px; font-size: 16px;">
+              <i class="fa-solid fa-globe" style="margin-right: 6px; width: 20px; height: 20px;"></i>English
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row justify-content-between" style="padding: 64px 0 32px;">
+        <img class="col-12 col-md-auto p-0" src="../images/logo/logo-udemy-inverted.svg" style="width: 92px; height: 34px;"
+          alt="">
+        <p class="col-12 col-md-auto mt-3 p-0" style="color: #fff; font-size: 12px;">© 2022 Udemy, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
