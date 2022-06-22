@@ -25,9 +25,13 @@ console.log(user_emails[0].textContent)
 var addToCardBtns = document.querySelectorAll('.add-btn')
 addToCardBtns.forEach((addToCardBtn)=>{
     console.log(addToCardBtn)
-    addToCardBtn.addEventListener('click', ()=>{
-        if (courses.length > 0 || courses.some((course) => {
-            return (user_emails[0].textContent == course.email)
+        addToCardBtn.addEventListener('click', () => {
+        let goToCartBtn = document.getElementById('goToCartBtn');
+        if (goToCartBtn) {
+          goToCartBtn.remove();
+        }
+        if (courses.length == 0 || courses.every((course) => {
+            return (user_emails[0].textContent != course.email)
         }))
             cart.innerHTML = '';
     
