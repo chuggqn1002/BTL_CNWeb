@@ -230,28 +230,24 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="addModalLabel">Add new course</h5>
+                                <h5 class="modal-title" id="addModalLabel">Add category section course</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <form class="row g-3">
                                     <div class="col-md-6">
-                                        <label for="course-code" class="form-label">Course Code</label>
+                                        <label for="course-code" class="form-label">Category Code</label>
                                         <input type="text" class="form-control" id="course-code">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="category-code" class="form-label">Category Code</label>
+                                        <label for="category-code" class="form-label">Sub-Category Code</label>
                                         <input type="text" class="form-control" id="category-code">
                                     </div>
                                     <div class="col-12">
-                                        <label for="course-title" class="form-label">Course Title</label>
-                                        <input type="text" class="form-control" id="course-title">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="inputContent" class="form-label">Course content</label>
+                                        <label for="inputContent" class="form-label">Numbers of Topic</label>
                                         <select id="inputContent" class="form-select">
-                                            <option selected>Choose number of content</option>
+                                            <option selected>Choose number of topic</option>
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -274,23 +270,18 @@
                                             <option>20</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="author" class="form-label">Author name</label>
-                                        <input type="text" class="form-control" id="author">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="pricing" class="form-label">Pricing</label>
-                                        <input type="text" class="form-control" id="pricing">
-                                    </div>
                                     <div class="mb-3">
-                                        <label for="imgFile" class="form-label">Select image</label>
-                                        <input class="form-control" type="file" id="imgFile">
-                                    </div>
+                                        <label for="validationTextarea" class="form-label">Topic</label>
+                                        <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                                        <div class="invalid-feedback">
+                                          Please enter topics in the textarea.
+                                        </div>
+                                      </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
                                 <button id="acceptAddBtn" type="submit" class="btn btn-primary" onclick="add()" data-bs-dismiss="modal">Add new
-                                    course</button>
+                                    category</button>
                             </div>
                         </div>
                     </div>

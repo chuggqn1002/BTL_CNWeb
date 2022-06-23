@@ -14,7 +14,7 @@
 
 <body>
     <main class="d-flex">
-        <div id="sidebarAdmin" class="d-sm-flex flex-column flex-shrink-0 p-3 bg-light d-none"  style="width: 280px;">
+        <div id="sidebarAdmin" class="d-sm-flex flex-column flex-shrink-0 p-3 bg-light d-none" style="width: 280px;">
             <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <img src="../images/logo/logo-udemy.png" class="bi pe-none me-2">
                 <span class="fs-4 sidebar-title">Admin Page</span>
@@ -72,7 +72,8 @@
                 <div class="dropdown">
                     <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
                         id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../images/logo/logo-udemy.svg" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <img src="../images/logo/logo-udemy.svg" alt="" width="32" height="32"
+                            class="rounded-circle me-2">
                         <strong>Admin</strong>
                     </a>
                     <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
@@ -110,10 +111,11 @@
                             </div>
                             <div class="col-lg-8 col-12">
                                 <div class="d-flex justify-content-evenly">
-                                    <button type="button" class="btn btn-primary">Add</button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#addModal">Add</button>
                                     <button type="button" id="course-del" class="btn btn-danger">Delete</button>
                                     <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                    data-bs-target="#updateModal">Update changes</button>
+                                        data-bs-target="#updateModal">Update changes</button>
                                 </div>
                             </div>
                         </div>
@@ -133,8 +135,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="1"
-                                            id="flexCheckDefault"></td>
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox"
+                                            value="1" id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>1</td>
                                     <td>tlu1@gmail.com</td>
@@ -143,8 +145,8 @@
                                     <td>3 courses ( <a href="./courseDetails/courseDetails.html">Show details</a> )</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="2"
-                                            id="flexCheckDefault"></td>
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox"
+                                            value="2" id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>2</td>
                                     <td>quangchung@gmail.com</td>
@@ -153,8 +155,8 @@
                                     <td>3 courses ( <a href="./courseDetails/courseDetails.html">Show details</a> )</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row"><input class="form-check-input course-check" type="checkbox" value="3"
-                                            id="flexCheckDefault"></td>
+                                    <td scope="row"><input class="form-check-input course-check" type="checkbox"
+                                            value="3" id="flexCheckDefault"></td>
                                     <td><i class="fa-regular fa-file fs-3"></i></td>
                                     <td>3</td>
                                     <td>nhadau@gmail.com</td>
@@ -165,43 +167,120 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="addModalLabel">Add new account</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="course-code" class="form-label">Account Email</label>
+                                            <input type="text" class="form-control" id="course-code">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="category-code" class="form-label">Account Password</label>
+                                            <input type="text" class="form-control" id="category-code">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="course-title" class="form-label">User Name</label>
+                                            <input type="text" class="form-control" id="course-title">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputContent" class="form-label">Course has own</label>
+                                            <select id="inputContent" class="form-select">
+                                                <option selected>Choose number of course has own</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="author" class="form-label">Details about course has own</label>
+                                            <div class="d-flex">
+                                                <select class="form-select me-5" required aria-label="select example">
+                                                    <option value="">Select course</option>
+                                                    <option value="1">First course</option>
+                                                    <option value="2">Second course</option>
+                                                    <option value="3">Thirth course</option>
+                                                </select>
+                                                <button type="button" class="btn btn-primary">Adjust course</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="acceptAddBtn" type="submit" class="btn btn-primary" onclick="add()"
+                                        data-bs-dismiss="modal">Add new
+                                        account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Update-Modal -->
-                <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="updateModalLabel">Update and save changes to database</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Do you really want to apply these changes have done ?
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary " data-bs-dismiss="modal"
-                                data-bs-toggle="modal" data-bs-target="#updateSubModal">Yes</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="updateModalLabel">Update and save changes to database
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Do you really want to apply these changes have done ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary " data-bs-dismiss="modal"
+                                        data-bs-toggle="modal" data-bs-target="#updateSubModal">Yes</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
 
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Update-Sub-Modal -->
-            <div class="modal fade" id="updateSubModal" tabindex="-1" aria-labelledby="subLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="subLabel">Update and save changes to database Successful
-                            </h5>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
+                    <!-- Update-Sub-Modal -->
+                    <div class="modal fade" id="updateSubModal" tabindex="-1" aria-labelledby="subLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="subLabel">Update and save changes to database Successful
+                                    </h5>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Exit</button>
 
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
                 </div>
             </div>

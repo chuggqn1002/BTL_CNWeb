@@ -110,7 +110,8 @@
                             </div>
                             <div class="col-lg-8 col-12">
                                 <div class="d-flex justify-content-evenly">
-                                    <button type="button" class="btn btn-primary">Add</button>
+                                    <button type="button" class="btn btn-primary"  data-bs-toggle="modal"
+                                    data-bs-target="#addModal">Add</button>
                                     <button type="button" id="course-del" class="btn btn-danger">Delete</button>
                                     <button type="button" class="btn btn-success"  data-bs-toggle="modal"
                                     data-bs-target="#updateModal">Update changes</button>
@@ -153,6 +154,31 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="addModalLabel">Add new course</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row g-3">
+                                        <div class="mb-3">
+                                            <label for="imgFile" class="form-label">Select image</label>
+                                            <input class="form-control" type="file" id="imgFile">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="acceptAddBtn" type="submit" class="btn btn-primary" onclick="add()" data-bs-dismiss="modal">Add new
+                                        course</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Update-Modal -->
                 <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel"
                 aria-hidden="true">
