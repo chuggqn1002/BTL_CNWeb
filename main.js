@@ -71,4 +71,4 @@ var swiper = new Swiper(".slide-content", {
     },
   });
 
-
+  window.onbeforeunload = function() { localStorage.removeItem('log in');  };
